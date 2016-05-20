@@ -1,0 +1,68 @@
+{
+    "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+    "@id": "https://data.cityofnewyork.us/data.json",
+    "@type": "dcat:Catalog",
+    "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+    "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+    "dataset": [
+        {
+            "accessLevel": "restricted public",
+            "landingPage": "https://data.cityofnewyork.us/d/f4rp-2kvy",
+            "issued": "2016-05-19",
+            "@type": "dcat:Dataset",
+            "modified": "2016-03-29",
+            "keyword": [
+                "capital",
+                "pprojects",
+                "ddc",
+                "public buildings",
+                "infrastracture"
+            ],
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Tatyana"
+                "ln": "Plashkova"
+                "email": "PlashkoT@ddc.nyc.gov"
+                "phone": "718-391-2926"
+            },
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "NYC Department of Design and Construction"
+            },
+            "identifier": "https://data.cityofnewyork.us/api/views/f4rp-2kvy",
+            "description": "A layer package with spatial data on DDC infrastracture and public building capital projects from 1980s to present",
+            "title": "DDC Capital Projects",
+            "distribution": [
+                {
+                    "@type": "dcat:Distribution",
+                    "downloadURL": "https://data.cityofnewyork.us/api/views/f4rp-2kvy/rows.csv?accessType=DOWNLOAD",
+                    "mediaType": "text/csv"
+                },
+                {
+                    "mediaType": "application/rdf+xml",
+                    "downloadURL": "https://data.cityofnewyork.us/api/views/f4rp-2kvy/rows.rdf?accessType=DOWNLOAD",
+                    "describedBy": "https://data.cityofnewyork.us/api/views/f4rp-2kvy/columns.rdf",
+                    "describedByType": "application/rdf+xml",
+                    "@type": "dcat:Distribution"
+                },
+                {
+                    "mediaType": "application/json",
+                    "downloadURL": "https://data.cityofnewyork.us/api/views/f4rp-2kvy/rows.json?accessType=DOWNLOAD",
+                    "describedBy": "https://data.cityofnewyork.us/api/views/f4rp-2kvy/columns.json",
+                    "describedByType": "application/json",
+                    "@type": "dcat:Distribution"
+                },
+                {
+                    "mediaType": "application/xml",
+                    "downloadURL": "https://data.cityofnewyork.us/api/views/f4rp-2kvy/rows.xml?accessType=DOWNLOAD",
+                    "describedBy": "https://data.cityofnewyork.us/api/views/f4rp-2kvy/columns.svc",
+                    "describedByType": "application/xml",
+                    "@type": "dcat:Distribution"
+                }
+            ],
+            "theme": [
+                "Environment"
+            ]
+        }
+    ]
+}
