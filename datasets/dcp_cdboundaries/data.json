@@ -1,0 +1,10 @@
+{
+  "url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nycd16b.zip",
+  "table": "dcp_cdboundaries",
+  "load": "shp2pgsql",
+  "loadFile": "nycd_16b/nycd.shp",
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+}

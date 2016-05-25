@@ -1,0 +1,1 @@
+shp2pgsql -d -s 2263:4326 ../temp/building_footprints_shape/building_0316.shp public.doitt_buildingfootprints | psql -d postgres -U postgres 

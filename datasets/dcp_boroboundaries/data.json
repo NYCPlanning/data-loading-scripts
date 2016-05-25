@@ -1,0 +1,10 @@
+{
+  "url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybb16b.zip",
+  "table": "dcp_boroughboundaries",
+  "load": "shp2pgsql",
+  "loadFile": "nybb_16b/nybb.shp",
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+}

@@ -1,1 +1,0 @@
-\COPY dob_permits FROM '../temp/dob_projects.csv' CSV HEADER;
