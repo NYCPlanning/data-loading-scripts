@@ -24,7 +24,10 @@ var config = require(dirPath + '/data.json')
 //install = get + push
 if (command=='install') {
   getFile(config)
-    .then((pushFile));
+    .then(function(){
+      console.log('then')
+      pushFile(config)
+    });
 }
 
 //just download 
@@ -59,9 +62,12 @@ function getFile(config) {
         var ext = getExtension(filename);
         if (ext=='zip') {
           console.log('Unzipping ' + writePath + '/' + filename)
-          fs.createReadStream(writePath + '/' + filename)
+          var stream = fs.createReadStream(writePath + '/' + filename)
             .pipe(unzip.Extract({ path: writePath }));
-          resolve();
+          
+          stream.on('close', function() {
+            resolve();
+          })
         } else {
           resolve();
         }
@@ -72,6 +78,8 @@ function getFile(config) {
 
 function pushFile(config) {
   
+  console.log('pushing', config)
+
   if(config.load == 'shp2pgsql') {
     console.log('Pushing into database using ' + config.load + '...');
     var filePath = './temp/' + dataset + '/' + config.loadFile
@@ -88,8 +96,9 @@ function pushFile(config) {
       
     console.log('Executing: ' + shp2pgsql);
 
+
     exec(shp2pgsql, {}, function(err, stdout, stderr) {
-        console.log(stdout);
+        console.log(err,stdout, stderr);
     })
   }
 }
