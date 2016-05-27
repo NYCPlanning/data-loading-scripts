@@ -45,7 +45,7 @@ function getFile(config) {
 
     config.saveFile = config.saveFile || getFilename(config.url);
     config.writePath = './temp/' + dataset;
-    config.loadFile = config.loadFile || config.saveFile;
+    //config.loadFile = config.loadFile || config.saveFile;
 
 
      if(config.url.indexOf('http') > -1) {
@@ -116,24 +116,40 @@ function pushFile(config) {
 
   if(config.load == 'shp2pgsql') {
     console.log('Pushing into database using ' + config.load + '...');
-    var filePath = './temp/' + dataset + '/' + config.loadFile
 
-    var shp2pgsqlOptions = {
-      options: config.shp2pgsql.join(' '),
-      filePath: filePath,
-      database: db.database,
-      user: db.user,
-      table: config.table
-    }
+    //recursive function to run through the loadfiles one by one
+    var loadFiles = config.loadFiles;
 
-    var shp2pgsql = Mustache.render('shp2pgsql {{options}} {{{filePath}}} {{table}} | psql -d {{database}} -U {{user}}', shp2pgsqlOptions);
+    var i=0;
+    (function push(i) {
+      console.log(i);
+      if(i < loadFiles.length) {
+        var filePath = './temp/' + dataset + '/' + loadFiles[i].file
+
+        var shp2pgsqlOptions = {
+          options: config.shp2pgsql.join(' '),
+          filePath: filePath,
+          database: db.database,
+          user: db.user,
+          table: loadFiles[i].table
+        }
+
+        var shp2pgsql = Mustache.render('shp2pgsql {{options}} {{{filePath}}} {{table}} | psql -d {{database}} -U {{user}}', shp2pgsqlOptions);
+          
+        console.log('Executing: ' + shp2pgsql);
+
+
+        exec(shp2pgsql, {}, function(err, stdout, stderr) {
+            console.log(err,stdout, stderr);
+            i++;
+            push(i);
+        })
+        
+      }
+    })(0);
       
-    console.log('Executing: ' + shp2pgsql);
-
-
-    exec(shp2pgsql, {}, function(err, stdout, stderr) {
-        console.log(err,stdout, stderr);
-    })
+    
+  
   }
 }
 
