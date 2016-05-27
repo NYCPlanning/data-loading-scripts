@@ -43,8 +43,9 @@ if (command=='push') {
 function getFile(config) {
   
 
-    config.filename = getFilename(config.url);
+    config.saveFile = config.saveFile || getFilename(config.url);
     config.writePath = './temp/' + dataset;
+    config.loadFile = config.loadFile || config.saveFile;
 
 
      if(config.url.indexOf('http') > -1) {
@@ -64,18 +65,18 @@ function getHTTP(config) {
 
         var options = {
           directory: config.writePath,
-          filename: config.filename
+          filename: config.saveFile
         }
         download(config.url, options, function(err){
         if (err) throw err
 
-        console.log('Saved file to ' + config.writePath + '/' + config.filename)
-        var ext = getExtension(config.filename);
+        console.log('Saved file to ' + config.writePath + '/' + config.saveFile)
+        var ext = getExtension(config.saveFile);
         if (ext=='zip') {
 
-          console.log('Unzipping ' + writePath + '/' + filename)
-          var stream = fs.createReadStream(writePath + '/' + filename)
-            .pipe(unzip.Extract({ path: writePath }));
+          console.log('Unzipping ' + config.writePath + '/' + config.saveFile)
+          var stream = fs.createReadStream(config.writePath + '/' + config.saveFile)
+            .pipe(unzip.Extract({ path: config.writePath }));
           
           stream.on('close', function() {
             resolve();
@@ -94,13 +95,13 @@ function getFTP(config) {
       config.url=Mustache.render(config.url, ftpAuth)
       console.log('Downloading ' + config.url)
       fs.emptyDirSync(config.writePath);
-      FTP.get(config.url, config.writePath + '/' + config.filename, function (err, res) {
+      FTP.get(config.url, config.writePath + '/' + config.saveFile, function (err, res) {
         if(!err) {
-          console.log('Saved file to ' + config.writePath + '/' + config.filename)
-          var ext = getExtension(config.filename);
+          console.log('Saved file to ' + config.writePath + '/' + config.saveFile)
+          var ext = getExtension(config.saveFile);
           if (ext=='zip') {
-            console.log('Unzipping ' + config.writePath + '/' + config.filename)
-            fs.createReadStream(config.writePath + '/' + config.filename)
+            console.log('Unzipping ' + config.writePath + '/' + config.saveFile)
+            fs.createReadStream(config.writePath + '/' + config.saveFile)
               .pipe(unzip.Extract({ path: config.writePath }));
             resolve();
           } else {
@@ -112,9 +113,6 @@ function getFTP(config) {
 }
 
 function pushFile(config) {
-  console.log('pushFile', config)
-  
-  console.log('pushing', config)
 
   if(config.load == 'shp2pgsql') {
     console.log('Pushing into database using ' + config.load + '...');
