@@ -72,10 +72,14 @@ function getHTTP(config) {
         console.log('Saved file to ' + config.writePath + '/' + config.filename)
         var ext = getExtension(config.filename);
         if (ext=='zip') {
-          console.log('Unzipping ' + config.writePath + '/' + config.filename)
-          fs.createReadStream(config.writePath + '/' + config.filename)
-            .pipe(unzip.Extract({ path: config.writePath }));
-          resolve();
+
+          console.log('Unzipping ' + writePath + '/' + filename)
+          var stream = fs.createReadStream(writePath + '/' + filename)
+            .pipe(unzip.Extract({ path: writePath }));
+          
+          stream.on('close', function() {
+            resolve();
+          })
         } else {
           resolve();
         }
@@ -110,6 +114,8 @@ function getFTP(config) {
 function pushFile(config) {
   console.log('pushFile', config)
   
+  console.log('pushing', config)
+
   if(config.load == 'shp2pgsql') {
     console.log('Pushing into database using ' + config.load + '...');
     var filePath = './temp/' + dataset + '/' + config.loadFile
@@ -126,8 +132,9 @@ function pushFile(config) {
       
     console.log('Executing: ' + shp2pgsql);
 
+
     exec(shp2pgsql, {}, function(err, stdout, stderr) {
-        console.log(stdout);
+        console.log(err,stdout, stderr);
     })
   }
 }
