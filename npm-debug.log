@@ -1,93 +1,49 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g' ]
-2 info using npm@2.1.17
-3 info using node@v0.10.24
-4 silly cache add args [ '.', null ]
-5 verbose cache add spec .
-6 silly cache add parsed spec { raw: '.',
-6 silly cache add   scope: null,
-6 silly cache add   name: null,
-6 silly cache add   rawSpec: '.',
-6 silly cache add   spec: '/Users/adoyle/sites/repos/data-loading-scripts',
-6 silly cache add   type: 'directory' }
-7 verbose addLocalDirectory /Users/adoyle/.npm/data-loading-scripts/1.0.0/package.tgz not in flight; packing
-8 verbose getCacheStat cache creation not in flight; initializing
-9 verbose tar pack [ '/Users/adoyle/.npm/data-loading-scripts/1.0.0/package.tgz',
-9 verbose tar pack   '/Users/adoyle/sites/repos/data-loading-scripts' ]
-10 verbose tarball /Users/adoyle/.npm/data-loading-scripts/1.0.0/package.tgz
-11 verbose folder /Users/adoyle/sites/repos/data-loading-scripts
-12 info prepublish data-loading-scripts@1.0.0
-13 verbose addLocalTarball adding from inside cache /Users/adoyle/.npm/data-loading-scripts/1.0.0/package.tgz
-14 silly cache afterAdd data-loading-scripts@1.0.0
-15 verbose afterAdd /Users/adoyle/.npm/data-loading-scripts/1.0.0/package/package.json not in flight; writing
-16 verbose afterAdd /Users/adoyle/.npm/data-loading-scripts/1.0.0/package/package.json written
-17 silly install resolved [ { name: 'data-loading-scripts',
-17 silly install resolved     version: '1.0.0',
-17 silly install resolved     description: 'This repo contains scripts for loading datasets into the Capital Planning PostgreSQL/PostGIS databases.',
-17 silly install resolved     main: 'index.js',
-17 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
-17 silly install resolved     repository:
-17 silly install resolved      { type: 'git',
-17 silly install resolved        url: 'git+https://github.com/NYCPlanning/data-loading-scripts.git' },
-17 silly install resolved     author: '',
-17 silly install resolved     license: 'ISC',
-17 silly install resolved     bin: { data: './index.js' },
-17 silly install resolved     bugs: { url: 'https://github.com/NYCPlanning/data-loading-scripts/issues' },
-17 silly install resolved     homepage: 'https://github.com/NYCPlanning/data-loading-scripts#readme',
-17 silly install resolved     dependencies:
-17 silly install resolved      { 'download-file': '^0.1.5',
-17 silly install resolved        'fs-path': '0.0.22',
-17 silly install resolved        mustache: '^2.2.1',
-17 silly install resolved        unzip: '^0.1.11' },
-17 silly install resolved     readme: '#Data Loading Scripts\n\nA node.js CLI tool for automated dataset loading into the DCP Capital Planning Database, making the full refresh of a dataset as simple as `data install {datasetName}` Based loosely on [docker4data](https://github.com/talos/docker4data)\n\n##Structure\n\n`datasetName` is important, and for now takes the form of {agency}_{dataset}, e.g. `dcp_mappluto`.  Each dataset should have a folder with its datasetName in the `datasets` directory.  When executing the CLI tool, the datasetName is passed in as an argument, and the script searches for `{datasetName}/data.json` and then runs accordingly.\n\n##data.json\n\n`data.json` includes everything the script needs to download, process, and load the dataset.  An example `data.json` for NYC borough boundaries looks like:\n\n```\n{\n  "url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybb16b.zip",\n  "table": "dcp_boroughboundaries",\n  "load": "shp2pgsql",\n  "loadFile": "nybb_16b/nybb.shp",\n  "shp2pgsql": [ \n    "-d",\n    "-s 2263:4326"\n  ] \n}\n```\n- `url` - the download link \n- `table` - the tablename to be used when loading the data\n- `load` - which loading type to use.  `shp2pgsql` is the only one working right now and easily imports shapefiles. Future types will include \'psql\' with specified SQL file stored in the dataset\'s directory, and `ogr2ogr`, etc.  We will add new types as needed.\n\n\n##How to Use\n\n- Clone this repo\n- Install globally to make the CLI command `data` available. `npm install -g`\n- Add your postGIS connection info by updating `dbconfig.sample.js` and saving it as `dbconfig.js`\n- Enter `data {command} {datasetName}` in the terminal, like `data install dcp_boroboundaries\n\n##Commands\n\nThe workflows are divided into 2 parts for now, `get` and `push`.  \n\n- `get` downloads the file to the temp directory and unzips if necessary\n- `push` grabs the file from the temp directory and loads it into the database\n- `install` does the entire workflow\n\nWe may want to add `after` for SQL to be executed on the dataset after it has been loaded (to change column types, etc)\n\n\nTODO: \n- error handling',
-17 silly install resolved     readmeFilename: 'readme.MD',
-17 silly install resolved     gitHead: 'bf867fa480ea023c1086cb41aea7061a94a94b33',
-17 silly install resolved     _id: 'data-loading-scripts@1.0.0',
-17 silly install resolved     _shasum: '0e66c8dbb52baf7cf32f84d6752a24eb1ba2efb0',
-17 silly install resolved     _from: '../../Users/adoyle/sites/repos/data-loading-scripts',
-17 silly install resolved     _resolved: 'file:../../Users/adoyle/sites/repos/data-loading-scripts' } ]
-18 info install data-loading-scripts@1.0.0 into /usr/local/lib
-19 info installOne data-loading-scripts@1.0.0
-20 verbose installOne of data-loading-scripts to /usr/local/lib not in flight; installing
-21 verbose lock using /Users/adoyle/.npm/_locks/data-loading-scripts-483859bb2f83423b.lock for /usr/local/lib/node_modules/data-loading-scripts
-22 silly install write writing data-loading-scripts 1.0.0 to /usr/local/lib/node_modules/data-loading-scripts
-23 silly cache addNamed cb data-loading-scripts@1.0.0
-24 verbose unbuild lib/node_modules/data-loading-scripts
-25 verbose gentlyRm vacuuming /usr/local/lib/node_modules/data-loading-scripts
-26 verbose tar unpack /Users/adoyle/.npm/data-loading-scripts/1.0.0/package.tgz
-27 verbose tar unpacking to /usr/local/lib/node_modules/data-loading-scripts
-28 verbose gentlyRm vacuuming /usr/local/lib/node_modules/data-loading-scripts
-29 silly gunzTarPerm modes [ '755', '644' ]
-30 error tar.unpack untar error /Users/adoyle/.npm/data-loading-scripts/1.0.0/package.tgz
-31 verbose unlock done using /Users/adoyle/.npm/_locks/data-loading-scripts-483859bb2f83423b.lock for /usr/local/lib/node_modules/data-loading-scripts
-32 verbose fstream_path /usr/local/lib/node_modules/data-loading-scripts
-33 verbose fstream_type Directory
-34 verbose fstream_class DirWriter
-35 verbose stack Error: EACCES, mkdir '/usr/local/lib/node_modules/data-loading-scripts'
-36 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
-36 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
-36 verbose fstream_stack Object.oncomplete (fs.js:107:15)
-37 verbose cwd /Users/adoyle/sites/repos/data-loading-scripts
-38 error Darwin 14.1.0
-39 error argv "node" "/usr/local/bin/npm" "install" "-g"
-40 error node v0.10.24
-41 error npm  v2.1.17
-42 error path /usr/local/lib/node_modules/data-loading-scripts
-43 error code EACCES
-44 error errno 3
-45 error Error: EACCES, mkdir '/usr/local/lib/node_modules/data-loading-scripts'
-45 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/data-loading-scripts']
-45 error   errno: 3,
-45 error   code: 'EACCES',
-45 error   path: '/usr/local/lib/node_modules/data-loading-scripts',
-45 error   fstream_type: 'Directory',
-45 error   fstream_path: '/usr/local/lib/node_modules/data-loading-scripts',
-45 error   fstream_class: 'DirWriter',
-45 error   fstream_stack:
-45 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
-45 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
-45 error      'Object.oncomplete (fs.js:107:15)' ] }
-46 error Please try running this command again as root/Administrator.
-47 verbose exit [ 3, true ]
-48 verbose unbuild lib/node_modules/data-loading-scripts
-49 verbose gentlyRm vacuuming /usr/local/lib/node_modules/data-loading-scripts
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'install',
+1 verbose cli   'dcp_cdboundaries' ]
+2 info using npm@3.8.5
+3 info using node@v5.10.1
+4 verbose run-script [ 'preinstall', 'install', 'postinstall' ]
+5 info lifecycle data-loading-scripts@1.0.0~preinstall: data-loading-scripts@1.0.0
+6 silly lifecycle data-loading-scripts@1.0.0~preinstall: no script for preinstall, continuing
+7 info lifecycle data-loading-scripts@1.0.0~install: data-loading-scripts@1.0.0
+8 verbose lifecycle data-loading-scripts@1.0.0~install: unsafe-perm in lifecycle true
+9 verbose lifecycle data-loading-scripts@1.0.0~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/chriswhong/Sites/data-loading-scripts/node_modules/.bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:/opt/X11/bin:/opt/ImageMagick/bin:/Library/Frameworks/GDAL.framework/Programs:/usr/local/lib/ruby/gems/1.9.1/gems/jekyll-2.5.3/bin
+10 verbose lifecycle data-loading-scripts@1.0.0~install: CWD: /Users/chriswhong/Sites/data-loading-scripts
+11 silly lifecycle data-loading-scripts@1.0.0~install: Args: [ '-c', 'node get.js && node push.js "dcp_cdboundaries"' ]
+12 silly lifecycle data-loading-scripts@1.0.0~install: Returned: code: 1  signal: null
+13 info lifecycle data-loading-scripts@1.0.0~install: Failed to exec install script
+14 verbose stack Error: data-loading-scripts@1.0.0 install: `node get.js && node push.js "dcp_cdboundaries"`
+14 verbose stack Exit status 1
+14 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:239:16)
+14 verbose stack     at emitTwo (events.js:100:13)
+14 verbose stack     at EventEmitter.emit (events.js:185:7)
+14 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+14 verbose stack     at emitTwo (events.js:100:13)
+14 verbose stack     at ChildProcess.emit (events.js:185:7)
+14 verbose stack     at maybeClose (internal/child_process.js:850:16)
+14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
+15 verbose pkgid data-loading-scripts@1.0.0
+16 verbose cwd /Users/chriswhong/Sites/data-loading-scripts
+17 error Darwin 15.4.0
+18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "install" "dcp_cdboundaries"
+19 error node v5.10.1
+20 error npm  v3.8.5
+21 error code ELIFECYCLE
+22 error data-loading-scripts@1.0.0 install: `node get.js && node push.js "dcp_cdboundaries"`
+22 error Exit status 1
+23 error Failed at the data-loading-scripts@1.0.0 install script 'node get.js && node push.js "dcp_cdboundaries"'.
+23 error Make sure you have the latest version of node.js and npm installed.
+23 error If you do, this is most likely a problem with the data-loading-scripts package,
+23 error not with npm itself.
+23 error Tell the author that this fails on your system:
+23 error     node get.js && node push.js "dcp_cdboundaries"
+23 error You can get information on how to open an issue for this project with:
+23 error     npm bugs data-loading-scripts
+23 error Or if that isn't available, you can get their info via:
+23 error     npm owner ls data-loading-scripts
+23 error There is likely additional logging output above.
+24 verbose exit [ 1, true ]
