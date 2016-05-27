@@ -21,7 +21,9 @@
   "homepage": "https://github.com/NYCPlanning/data-loading-scripts#readme",
   "dependencies": {
     "download-file": "^0.1.5",
+    "fs-extra": "^0.30.0",
     "fs-path": "0.0.22",
+    "ftp-get": "^0.3.1",
     "mustache": "^2.2.1",
     "unzip": "^0.1.11"
   }

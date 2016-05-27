@@ -3,18 +3,18 @@
 //dependencies
 var download = require('download-file'),
   unzip = require('unzip'),
-  fs = require('fs'),
+  fs = require('fs-extra'),
   Mustache = require('mustache')
-  exec = require('child_process').exec;
+  exec = require('child_process').exec,
+  FTP = require('ftp-get')
 
 //get postgres database config
 var db = require('./dbconfig.js')
+var ftpAuth = require('./ftpAuth.js')
 
 //get the command that the user passed in
 var command = process.argv[2];
 var dataset = process.argv[3];
-
-console.log(command)
 
 var dirPath = './datasets/' + dataset;
 
@@ -24,7 +24,9 @@ var config = require(dirPath + '/data.json')
 //install = get + push
 if (command=='install') {
   getFile(config)
-    .then((pushFile));
+    .then(function(){
+      pushFile(config)
+    });
 }
 
 //just download 
@@ -37,40 +39,76 @@ if (command=='push') {
   pushFile(config)
 }
 
+
 function getFile(config) {
+  
+
+    config.filename = getFilename(config.url);
+    config.writePath = './temp/' + dataset;
+
+
+     if(config.url.indexOf('http') > -1) {
+        console.log('it is http');
+        return getHTTP(config);
+     } else if (config.url.indexOf('ftp') > -1) {
+        return getFTP(config);
+     }
+    
+  }
+
+
+function getHTTP(config) {
   return new Promise(
     function(resolve, reject) {
-      var url = config.url
+        console.log('Downloading ' + config.url)
 
-      console.log('Downloading ' + url)
-
-      var filename = getFilename(url);
-      var writePath = './temp/' + dataset;
-
-      var options = {
-        directory: writePath,
-        filename: filename
-      }
-     
-      download(url, options, function(err){
+        var options = {
+          directory: config.writePath,
+          filename: config.filename
+        }
+        download(config.url, options, function(err){
         if (err) throw err
 
-        console.log('Saved file to ' + writePath + '/' + filename)
-        var ext = getExtension(filename);
+        console.log('Saved file to ' + config.writePath + '/' + config.filename)
+        var ext = getExtension(config.filename);
         if (ext=='zip') {
-          console.log('Unzipping ' + writePath + '/' + filename)
-          fs.createReadStream(writePath + '/' + filename)
-            .pipe(unzip.Extract({ path: writePath }));
+          console.log('Unzipping ' + config.writePath + '/' + config.filename)
+          fs.createReadStream(config.writePath + '/' + config.filename)
+            .pipe(unzip.Extract({ path: config.writePath }));
           resolve();
         } else {
           resolve();
         }
       }) 
-    }
-  )
+    })
+}
+
+function getFTP(config) {
+  return new Promise(
+    function(resolve, reject) {
+
+      config.url=Mustache.render(config.url, ftpAuth)
+      console.log('Downloading ' + config.url)
+      fs.emptyDirSync(config.writePath);
+      FTP.get(config.url, config.writePath + '/' + config.filename, function (err, res) {
+        if(!err) {
+          console.log('Saved file to ' + config.writePath + '/' + config.filename)
+          var ext = getExtension(config.filename);
+          if (ext=='zip') {
+            console.log('Unzipping ' + config.writePath + '/' + config.filename)
+            fs.createReadStream(config.writePath + '/' + config.filename)
+              .pipe(unzip.Extract({ path: config.writePath }));
+            resolve();
+          } else {
+            resolve();
+          }
+        }
+      })
+    });
 }
 
 function pushFile(config) {
+  console.log('pushFile', config)
   
   if(config.load == 'shp2pgsql') {
     console.log('Pushing into database using ' + config.load + '...');
