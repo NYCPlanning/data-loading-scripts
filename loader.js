@@ -1,5 +1,6 @@
 var Get = require('./get.js');
-//var Push = require('./push.js');
+var Push = require('./push.js');
+var After = require('./after.js');
 
 //get the command that the user passed in
 var command = process.argv[2];
@@ -7,14 +8,14 @@ var command = process.argv[2];
 //get the name of the dataset that the user passed in
 var dataset = process.argv[3];
 
-
-
-
 //install = get + push
 if (command=='install') {
-  Get(config)
+  Get(dataset)
     .then(function(){
       Push(dataset)
+        .then(function(){
+          After(dataset);
+        })
     });
 }
 
@@ -25,5 +26,8 @@ if (command=='get') {
 
 //just push
 if (command=='push') {
-  Push(config)
+  Push(dataset)
+    .then(function(){
+      After(dataset);
+    })
 }

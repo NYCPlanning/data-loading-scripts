@@ -1,20 +1,33 @@
-console.log('after.js')
-var Mustache = require('mustache')
-var db = require('./dbconfig.js')
-var exec = require('child_process').exec
+module.exports = function(dataset) {
+  var Mustache = require('mustache')
+  var db = require('./dbconfig.js')
+  var exec = require('child_process').exec
+  var fs = require('fs')
 
-var dataset = process.argv[2];
-console.log(dataset)
 
-var command = Mustache.render('psql -d {{database}} -U {{user}} -f {{{path}}}after.sql', {
-  user: db.user,
-  database: db.database,
-  path: 'datasets/' + dataset + '/'
-});
+  console.log('Checking for after file...')
 
-console.log(command);
+  fs.open('datasets/' + dataset + '/after.sql', 'r', function(err) {
+    if(err) {
+      console.log('No after.sql found.')
+    } else {
+      runCommand();
+    }
+  })
+  
+  function runCommand() {
+    var command = Mustache.render('psql -d {{database}} -U {{user}} -f {{{path}}}after.sql', {
+      user: db.user,
+      database: db.database,
+      path: 'datasets/' + dataset + '/'
+    });
 
-exec(command, {}, function(err, stdout, stderr) {
-            console.log(err,stdout, stderr);
-            console.log('done')
-        })
+    console.log(command);
+
+    exec(command, {}, function(err, stdout, stderr) {
+      console.log(stdout);
+      console.log('Done')
+    })
+  }
+  
+}
