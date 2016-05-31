@@ -1,4 +1,4 @@
 module.exports = {
-  user: 'username',
-  database: 'databasename'
+  user: 'postgres',
+  database: 'postgis'
 }
