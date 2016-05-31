@@ -5,7 +5,7 @@
   "loadFiles": [
     {
       "file":"nybb_16b/nybb.shp",
-      "table": "dcp_boroughboundaries"
+      "table": "dcp_boroboundaries"
     }
   ],
   "shp2pgsql": [ 

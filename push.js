@@ -1,3 +1,5 @@
+var c = require('child_process');
+
 module.exports = function(dataset) {
   return new Promise(
       function(resolve, reject) {
@@ -40,6 +42,62 @@ module.exports = function(dataset) {
                   i++;
                   (i==loadFiles.length) ? resolve() : push(i);
               })
+            }
+          })(0);
+        }
+
+        //csv method
+        if(config.load == 'csv') {
+          console.log('Pushing into database using ' + config.load + '...');
+
+          //recursive function to run through the loadfiles one by one
+          var loadFiles = config.loadFiles;
+
+          var i=0;
+          (function push(i) {
+            console.log(i);
+            if(i < loadFiles.length) {
+              var filePath = './temp/' + dataset + '/' + loadFiles[i].file
+
+              config.csv.forEach(function(file) {
+                console.log(file);
+                if(file == 'create') {
+                  var command = Mustache.render('psql -d {{database}} -U {{user}} -f {{{path}}}{{file}}.sql', {
+                    user: db.user,
+                    database: db.database,
+                    path: 'datasets/' + dataset + '/', 
+                    file: file
+                  });
+
+                  console.log('Executing psql: ' + command)
+
+                  var response = c.execSync(command)
+                  console.log('Done', response)
+            
+                }
+
+                if(file == 'copy') {
+                  var loadFile = loadFiles[i].file;
+
+
+                  var command = Mustache.render('psql -d postgres -U postgres -c "\\COPY dob_permits FROM \'{{{filePath}}}\' CSV HEADER;"', {
+                    user: db.user,
+                    database: db.database,
+                    path: 'datasets/' + dataset + '/',
+                    filePath: filePath
+                  });
+
+                  console.log('Executing psql: ' + command)
+
+                  var response = c.execSync(command)
+                  console.log('Done', response)
+
+
+                }
+        
+              });
+              i++;
+              (i==loadFiles.length) ? resolve() : push(i);
             }
           })(0);
         }
