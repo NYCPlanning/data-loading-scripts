@@ -7,7 +7,7 @@ module.exports = function(dataset) {
     FTP = require('ftp-get')
 
   //get FTP credentials
-  var ftpAuth = require('./ftpAuth.js')
+  var ftpAuth = require('./ftpauth.js')
 
   var dirPath = './datasets/' + dataset;
 
