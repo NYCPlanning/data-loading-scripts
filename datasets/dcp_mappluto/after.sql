@@ -15,3 +15,5 @@ DROP TABLE bxmappluto;
 DROP TABLE qnmappluto;
 DROP TABLE bkmappluto;
 DROP TABLE simappluto;
+
+UPDATE dcp_mappluto SET geom = ST_GeometryN(st_makevalid(geom),1) WHERE ST_GeometryType(ST_makevalid(geom)) = 'ST_GeometryCollection';

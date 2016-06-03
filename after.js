@@ -24,10 +24,7 @@ module.exports = function(dataset) {
 
     console.log(command);
 
-    exec(command, {}, function(err, stdout, stderr) {
-      console.log(stdout);
-      console.log('Done')
-    })
+
   }
   
 }
