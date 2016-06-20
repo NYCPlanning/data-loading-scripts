@@ -1,27 +1,16 @@
 {
   "url": "https://data.cityofnewyork.us/api/geospatial/nqwf-w8eh?method=export&format=Original",
-<<<<<<< HEAD
-  "load": "shp2pgsql",
-  "loadFiles":[
-    {
-      "file":"nycd_16b/nycd.shp",
-      "table": "dcp_cdboundaries"
-=======
-  "saveFile":"doitt_buildingfootprints.zip",
+  
   "load": "shp2pgsql",
   "loadFiles":[
     {
       "file":"building_0316.shp",
       "table": "doitt_buildingfootprints"
->>>>>>> 7ec0b57842972eac0e3f2a285c68d04091ae375e
     }
   ], 
+  "saveFile" : "doitt_buildingfootprints.zip",
   "shp2pgsql": [ 
     "-d",
     "-s 2263:4326"
   ] 
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 7ec0b57842972eac0e3f2a285c68d04091ae375e
