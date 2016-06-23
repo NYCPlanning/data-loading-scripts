@@ -80,11 +80,12 @@ module.exports = function(dataset) {
                   var loadFile = loadFiles[i].file;
 
 
-                  var command = Mustache.render('psql -d postgres -U postgres -c "\\COPY dob_permits FROM \'{{{filePath}}}\' CSV HEADER;"', {
+                  var command = Mustache.render('psql -d {{database}} -U {{user}} -c "\\COPY {{dataset}} FROM \'{{{filePath}}}\' CSV HEADER;"', {
                     user: db.user,
                     database: db.database,
                     path: 'datasets/' + dataset + '/',
-                    filePath: filePath
+                    filePath: filePath,
+                    dataset: dataset
                   });
 
                   console.log('Executing psql: ' + command)
