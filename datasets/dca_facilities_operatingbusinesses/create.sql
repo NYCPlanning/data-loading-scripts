@@ -1,6 +1,6 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS dcla_facilities_culturalinstitutions;
-CREATE TABLE dcla_facilities_culturalinstitutions (
+DROP TABLE IF EXISTS dca_facilities_operatingbusinesses;
+CREATE TABLE dca_facilities_operatingbusinesses (
 	DCA_License_Number text,
 	License_Type text,
 	License_Expiration_Date text,
