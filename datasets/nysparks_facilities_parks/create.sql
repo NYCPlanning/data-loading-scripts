@@ -14,6 +14,6 @@ CREATE TABLE nysparks_facilities_parks (
   Golf_URL text,
   Nature_Center_URL text,
   Longitude double precision,
-  Latitude text,
+  Latitude double precision,
   Location text
 )
