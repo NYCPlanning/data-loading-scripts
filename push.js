@@ -38,7 +38,7 @@ module.exports = function(dataset) {
                 
               console.log('Executing: ' + shp2pgsql);
               exec(shp2pgsql, {}, function(err, stdout, stderr) {
-                  console.log(stdout);
+                  console.log(err, stdout, stderr);
                   i++;
                   (i==loadFiles.length) ? resolve() : push(i);
               })

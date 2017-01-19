@@ -4,12 +4,12 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"geo_export_9c2fc8d8-3af8-4f04-a4eb-c31f34d68ac7.shp",
+      "file":"geo_export_dcf6f17f-c66a-4c16-8831-2c82c9407ee2.shp",
       "table": "doitt_facilities_libraries"
     }
   ],
   "shp2pgsql": [ 
     "-d",
-    "-s 2263:4326"
+    "-s 4326:4326"
   ] 
 }
