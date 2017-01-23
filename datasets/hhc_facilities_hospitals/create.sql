@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS hhc_facilities_hospitals
+DROP TABLE IF EXISTS hhc_facilities_hospitals;
 CREATE TABLE hhc_facilities_hospitals (
   Facility_Type text,
   Borough text,
