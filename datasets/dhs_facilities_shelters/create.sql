@@ -4,7 +4,7 @@ CREATE TABLE dhs_facilities_shelters (
 Unique_ID text,
 Facility_Name text,
 Facility_Type text,
-Capacity numeric,
+Capacity text,
 Capacity_Type text,
 Address_Number text,
 Street_Name text,
