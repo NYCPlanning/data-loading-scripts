@@ -23,5 +23,5 @@ CREATE TABLE hhs_facilities_financialscontracts (
 	State text,
 	Zip_Code text,
 	Service_Setting_Name text,
-	Contract_Amount text
+	Contract_Amount_2 text
 )
