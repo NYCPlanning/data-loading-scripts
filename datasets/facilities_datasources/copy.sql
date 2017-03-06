@@ -1,0 +1,1 @@
+\COPY facilities_datasources FROM './temp/facilities_datasources/facilities_datasources.csv' CSV HEADER;

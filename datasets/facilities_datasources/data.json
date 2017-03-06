@@ -1,0 +1,15 @@
+{
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/facilities_datasources.csv",
+  "saveFile": "facilities_datasources.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"facilities_datasources.csv",
+      "table": "facilities_datasources"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

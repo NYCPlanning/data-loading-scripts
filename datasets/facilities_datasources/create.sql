@@ -1,6 +1,7 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS facilities_data_sources;
-CREATE TABLE facilities_data_sources (
+DROP TABLE IF EXISTS facilities_datasources;
+CREATE TABLE facilities_datasources (
+	using_01 text,
 	pgtable text,
 	agencysource text,
 	agencysourcename text,
