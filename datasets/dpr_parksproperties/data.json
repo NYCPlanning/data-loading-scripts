@@ -4,12 +4,12 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"DPR_ParksProperties_001/DPR_ParksProperties_001.shp",
+      "file":"OpenDataProperties20160714.shp",
       "table": "dpr_parksproperties"
     }
   ],
-  "shp2pgsql": [ 
+  "shp2pgsql": [
     "-d",
     "-s 2263:4326"
-  ] 
+  ]
 }
