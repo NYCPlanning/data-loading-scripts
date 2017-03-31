@@ -1,1 +1,0 @@
-\COPY hash_uid_lookup FROM './temp/hash_uid_lookup/hash_uid_lookup.csv' CSV HEADER;
