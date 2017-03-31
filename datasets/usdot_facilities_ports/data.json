@@ -1,5 +1,5 @@
 {
-  "url": "http://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/AdditionalAttachmentFiles/ports.zip",
+  "url": "https://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/AdditionalAttachmentFiles/ports.zip",
   "saveFile": "usdot_facilities_ports.zip",
   "load": "shp2pgsql",
   "loadFiles": [
@@ -8,8 +8,8 @@
       "table": "usdot_facilities_ports"
     }
   ],
-  "shp2pgsql": [ 
+  "shp2pgsql": [
     "-d",
     "-s 4326:4326"
-  ] 
+  ]
 }
