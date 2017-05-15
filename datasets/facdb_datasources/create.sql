@@ -1,6 +1,6 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS facilities_datasources;
-CREATE TABLE facilities_datasources (
+DROP TABLE IF EXISTS facdb_datasources;
+CREATE TABLE facdb_datasources (
 	using_01 text,
 	pgtable text,
 	datasource text,
@@ -14,5 +14,6 @@ CREATE TABLE facilities_datasources (
 	refreshfrequency text,
 	datadate text,
 	dataurl text,
-	linkdownload text
+	datadownload text,
+	overtype text
   )
