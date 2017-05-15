@@ -1,1 +1,0 @@
-\COPY facilities_uid_key FROM './temp/facilities_uid_key/facilities_uid_key.csv' CSV HEADER;
