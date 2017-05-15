@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"geo_export_c09814f7-fddf-426c-9d3d-7ea0b7442bbd.shp",
+      "file":"geo_export_088f32d1-e166-4c5f-9d19-3880e856f744.shp",
       "table": "nycha_facilities_policeservice"
     }
   ],

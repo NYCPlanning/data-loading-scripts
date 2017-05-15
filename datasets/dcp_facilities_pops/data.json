@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/pops%20index%20and%20required%20amenities%20inventory%20030217.csv",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/tbl_POPS.csv",
   "saveFile": "dcp_facilities_pops.csv",
   "load": "csv",
   "loadFiles": [
