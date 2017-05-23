@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/sbs/FacilitiesExplorer_SBSWorkforceDevelopmentLocations.csv",
+  "url": "https://data.cityofnewyork.us/api/views/6smc-7mk6/rows.csv?accessType=DOWNLOAD",
   "saveFile": "sbs_facilities_workforce1.csv",
   "load": "csv",
   "loadFiles": [
