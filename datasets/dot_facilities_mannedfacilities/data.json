@@ -4,7 +4,7 @@
   "loadFiles": [
     {
       "file":"Manned_Facilities/Manned_Facilities.shp",
-      "table": "dot_facilities_MannedFacilities"
+      "table": "dot_facilities_mannedfacilities"
     }
   ],
   "saveFile":"dot_facilities_MannedFacilities.zip",

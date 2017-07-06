@@ -4,7 +4,7 @@
   "loadFiles": [
     {
       "file":"Bridge_Houses/Bridge_Houses.shp",
-      "table": "dot_facilities_BridgeHouses"
+      "table": "dot_facilities_bridgehouses"
     }
   ],
   "saveFile":"dot_facilities_BridgeHouses.zip",

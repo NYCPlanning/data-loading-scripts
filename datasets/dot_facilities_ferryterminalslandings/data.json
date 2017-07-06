@@ -4,7 +4,7 @@
   "loadFiles": [
     {
       "file":"Ferry_Terminals_Landings/Ferry_Terminals_Landings.shp",
-      "table": "dot_facilities_FerryTerminalsLandings"
+      "table": "dot_facilities_ferryterminalslandings"
     }
   ],
   "saveFile":"dot_facilities_FerryTerminalsLandings.zip",
