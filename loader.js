@@ -31,3 +31,8 @@ if (command=='push') {
       After(dataset);
     })
 }
+
+//just after
+if (command=='after') {
+  After(dataset);
+}
