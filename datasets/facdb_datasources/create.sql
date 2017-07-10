@@ -8,12 +8,13 @@ CREATE TABLE facdb_datasources (
 	dataname text,
 	confidence text,
 	notes text,
-	uniqueID text,
+	uniqueid text,
 	datatype text,
 	refreshmeans text,
 	refreshfrequency text,
 	datadate text,
 	dataurl text,
 	datadownload text,
-	overtype text
+	overtype text,
+	docsnotes text
   )

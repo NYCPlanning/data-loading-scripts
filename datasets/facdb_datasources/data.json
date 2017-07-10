@@ -1,5 +1,5 @@
 {
-  "url": "https://raw.githubusercontent.com/NYCPlanning/facilities-db/master/tables/facdb_datasources.csv",
+  "url": "https://raw.githubusercontent.com/NYCPlanning/facilities-db/master/docs/facdb_datasources.csv",
   "saveFile": "facdb_datasources.csv",
   "load": "csv",
   "loadFiles": [
