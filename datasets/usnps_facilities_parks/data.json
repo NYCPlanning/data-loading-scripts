@@ -1,5 +1,5 @@
 {
-  "url": "https://irma.nps.gov/DataStore/DownloadFile/570816",
+  "url": "https://irma.nps.gov/DataStore/DownloadFile/580617",
   "saveFile": "usnps_facilities_parks.zip",
   "load": "shp2pgsql",
   "loadFiles": [
