@@ -12,7 +12,7 @@ module.exports = function(dataset) {
 
         //get the configuration for this dataset from its data.json file
         var config = require(dirPath + '/data.json')
-
+  
         //shp2pgsql method
         if(config.load == 'shp2pgsql') {
           console.log('Pushing into database using ' + config.load + '...');
@@ -46,6 +46,41 @@ module.exports = function(dataset) {
           })(0);
         }
 
+
+        //org2ogr method
+        if(config.load == 'org2ogr') {
+          console.log('Pushing into database using ' + config.load + '...');
+
+          //recursive function to run through the loadfiles one by one
+          var loadFiles = config.loadFiles;
+
+          var i=0;
+          (function push(i) {
+            console.log(i);
+            if(i < loadFiles.length) {
+              var filePath = './temp/' + dataset + '/' + loadFiles[i].file
+
+              var ogr2ogrOptions = {
+                options: config.ogr2ogr.join(' '),
+                filePath: filePath,
+                database: db.database,
+                user: db.user,
+                table: loadFiles[i].table
+              }
+                               
+              var ogr2ogr = Mustache.render("ogr2ogr -f 'PostgreSQL' PG:'dbname={{database}} {{{filePath}}} -nln {{table}} -overwrite {{options}}", ogr2ogrOptions);
+                
+              console.log('Executing: ' + ogr2ogr);
+              exec(ogr2ogr, {}, function(err, stdout, stderr) {
+                  console.log(err, stdout, stderr);
+                  i++;
+                  (i==loadFiles.length) ? resolve() : push(i);
+              })
+            }
+          })(0);
+        }
+
+          
         //csv method
         if(config.load == 'csv') {
           console.log('Pushing into database using ' + config.load + '...');

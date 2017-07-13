@@ -1,0 +1,14 @@
+{
+  "url": "http://www.nycgovparks.org/bigapps/DPR_CapitalProjectTracker_001.xml",
+  "saveFile": "dpr_capitalprojects.xml",
+  "load": "shp2pgsql",
+  "loadFiles": [
+    {
+      "file":"dpr_capitalprojects.shp",
+      "table": "dpr_capitalprojects"
+    }
+  ],
+  "shp2pgsql": [
+    "-d"
+  ]
+}

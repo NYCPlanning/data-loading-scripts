@@ -4,7 +4,6 @@ module.exports = function(dataset) {
   var exec = require('child_process').exec
   var fs = require('fs')
 
-
   console.log('Checking for after file...')
 
   fs.open('datasets/' + dataset + '/after.sql', 'r', function(err) {
@@ -22,9 +21,9 @@ module.exports = function(dataset) {
       path: 'datasets/' + dataset + '/'
     });
 
-    console.log(command);
-
-
+    exec(command, {}, function(err, stdout, stderr) {
+      console.log(err, stdout, stderr);
+    });
   }
   
 }

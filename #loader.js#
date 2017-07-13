@@ -13,30 +13,20 @@ var dataset = process.argv[3];
 if (command=='install') {
     Get(dataset)
         .then(function(){
-          setTimeout(() => {
             Preprocess(dataset)
+                // .catch(function(){
+                //     Push(dataset)
+                //         .then(function(){
+                //             After(dataset);
+                //         })
+                // })
                 .then(function(){
                     Push(dataset)
                         .then(function(){
                             After(dataset);
                         })
-                        .catch(function(){
-                            After(dataset);
-                        })
                 })
-                .catch(function(){
-                  console.log('preprocess failed')
-                    Push(dataset)
-                        .then(function(){
-                            After(dataset);
-                        })
-                        .catch(function(){
-                            After(dataset);
-                        })
-                })
-          }, 1000)
         })
-        .catch(() => {})
 };
 
 //just download 
