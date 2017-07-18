@@ -4,9 +4,9 @@ var exec = require('child_process').exec
 var fs = require('fs')
 
 // run preprocess.sh
-function runCommand(resolve) {
-    var command = Mustache.render('./datasets/{{dataset}}/preprocess.sh', {
-        dataset: dataset
+function runCommand(resolve, dataset) {
+    var command = Mustache.render('./datasets/{{ds}}/preprocess.sh', {
+        ds: dataset
     });
     console.log(command);
     exec(command, {}, function(err, stdout, stderr) {
@@ -25,7 +25,7 @@ const preprocess = (dataset) => {
                 console.log('No preprocess.sh found.')
                 reject();
             } else {
-                runCommand(resolve);
+                runCommand(resolve,(dataset));
             }
         });
     });
