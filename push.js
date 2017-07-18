@@ -68,7 +68,7 @@ module.exports = function(dataset) {
                 table: loadFiles[i].table
               }
                                
-              var ogr2ogr = Mustache.render("ogr2ogr -f 'PostgreSQL' PG:'dbname={{database}} {{{filePath}}} -nln {{table}} -overwrite {{options}}", ogr2ogrOptions);
+              var ogr2ogr = Mustache.render("ogr2ogr -f 'PostgreSQL' PG:'dbname={{database}} user={{user}}' {{{filePath}}} -nln {{table}} -overwrite {{options}}", ogr2ogrOptions);
                 
               console.log('Executing: ' + ogr2ogr);
               exec(ogr2ogr, {}, function(err, stdout, stderr) {
