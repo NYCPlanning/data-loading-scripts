@@ -1,5 +1,5 @@
 {
-  "url": "https://github.com/NYCPlanning/facilities-db/blob/master/helpers/facilities_addressestogeocode.csv",
+  "url": "https://raw.githubusercontent.com/NYCPlanning/facilities-db/master/helpers/facilities_addressestogeocode.csv",
   "saveFile": "dcp_facilities_togeocode.csv",
   "load": "csv",
   "loadFiles": [
