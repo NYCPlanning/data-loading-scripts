@@ -54,5 +54,10 @@ caps_df = gp.GeoDataFrame(caps,
                           crs = {'init':'epsg:4326'},
                           geometry = 'geom'
                           )
+
+# drop null geometries
+caps_df_geo = caps_df[ [i[0].x < -70 for i in caps_df['geom']]]
+
 # write to shapefile
+caps_df_geo.to_file('./temp/dpr_capitalprojects/dpr_capitalprojects_geo.shp', driver = 'ESRI Shapefile')
 caps_df.to_file('./temp/dpr_capitalprojects/dpr_capitalprojects.shp', driver = 'ESRI Shapefile')

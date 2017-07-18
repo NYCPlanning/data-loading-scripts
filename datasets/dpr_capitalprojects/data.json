@@ -6,9 +6,14 @@
     {
       "file":"dpr_capitalprojects.shp",
       "table": "dpr_capitalprojects"
+    },
+    {
+      "file":"dpr_capitalprojects_geo.shp",
+      "table": "dpr_capitalprojects_geo"
     }
   ],
   "shp2pgsql": [
-    "-d"
+      "-d",
+      "-s 4326"
   ]
 }
