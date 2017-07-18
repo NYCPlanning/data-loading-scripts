@@ -52,9 +52,9 @@ if (command=='preprocess') {
 //just push
 if (command=='push') {
   Push(dataset)
-    .then(function(){
-      After(dataset);
-    })
+//    .then(function(){
+//      After(dataset);
+//    })
 }
 
 //just after
