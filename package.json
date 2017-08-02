@@ -4,7 +4,11 @@
   "description": "This repo contains scripts for loading datasets into the Capital Planning PostgreSQL/PostGIS databases.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "get": "node loader get",
+    "preprocess": "node loader preprocess",
+    "push": "node loader push",
+    "after": "node loader after"
   },
   "repository": {
     "type": "git",
@@ -21,8 +25,8 @@
   "homepage": "https://github.com/NYCPlanning/data-loading-scripts#readme",
   "dependencies": {
     "download-file": "^0.1.5",
-    "fs-extra": "^0.30.0",
-    "fs-path": "0.0.22",
+    "fs-extra": "^4.0.1",
+    "fs-path": "0.0.23",
     "ftp-get": "^0.3.1",
     "mustache": "^2.2.1",
     "unzip": "^0.1.11"
