@@ -9,6 +9,9 @@ var command = process.argv[2];
 //get the name of the dataset that the user passed in
 var dataset = process.argv[3];
 
+//get db config
+var db_config = process.argv[4];
+
 //install = get + push
 if (command=='install') {
     Get(dataset)
@@ -39,7 +42,7 @@ if (command=='install') {
         .catch(() => {})
 };
 
-//just download 
+//just download
 if (command=='get') {
   Get(dataset);
 }

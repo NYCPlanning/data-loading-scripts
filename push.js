@@ -1,18 +1,17 @@
 var c = require('child_process');
 
-module.exports = function(dataset) {
+module.exports = function(dataset, db) {
   return new Promise(
       function(resolve, reject) {
         //load dependencies
         var Mustache = require('mustache'),
           exec = require('child_process').exec;
 
-        var db = require('./dbconfig.js');
         var dirPath = './datasets/' + dataset;
 
         //get the configuration for this dataset from its data.json file
         var config = require(dirPath + '/data.json')
-  
+
         //shp2pgsql method
         if(config.load == 'shp2pgsql') {
           console.log('Pushing into database using ' + config.load + '...');
@@ -35,7 +34,7 @@ module.exports = function(dataset) {
               }
 
               var shp2pgsql = Mustache.render('shp2pgsql {{options}} {{{filePath}}} {{table}} | psql -d {{database}} -U {{user}}', shp2pgsqlOptions);
-                
+
               console.log('Executing: ' + shp2pgsql);
               exec(shp2pgsql, {}, function(err, stdout, stderr) {
                   console.log(err, stdout, stderr);
@@ -67,9 +66,9 @@ module.exports = function(dataset) {
                 user: db.user,
                 table: loadFiles[i].table
               }
-                               
+
               var ogr2ogr = Mustache.render("ogr2ogr -f 'PostgreSQL' PG:'dbname={{database}} user={{user}}' {{{filePath}}} -nln {{table}} -overwrite {{options}}", ogr2ogrOptions);
-                
+
               console.log('Executing: ' + ogr2ogr);
               exec(ogr2ogr, {}, function(err, stdout, stderr) {
                   console.log(err, stdout, stderr);
@@ -80,7 +79,7 @@ module.exports = function(dataset) {
           })(0);
         }
 
-          
+
         //csv method
         if(config.load == 'csv') {
           console.log('Pushing into database using ' + config.load + '...');
@@ -100,7 +99,7 @@ module.exports = function(dataset) {
                   var command = Mustache.render('psql -d {{database}} -U {{user}} -f {{{path}}}{{file}}.sql', {
                     user: db.user,
                     database: db.database,
-                    path: 'datasets/' + dataset + '/', 
+                    path: 'datasets/' + dataset + '/',
                     file: file
                   });
 
@@ -108,7 +107,7 @@ module.exports = function(dataset) {
 
                   var response = c.execSync(command)
                   console.log('Done', response)
-            
+
                 }
 
                 if(file == 'copy') {
@@ -130,7 +129,7 @@ module.exports = function(dataset) {
 
 
                 }
-        
+
               });
               i++;
               (i==loadFiles.length) ? resolve() : push(i);

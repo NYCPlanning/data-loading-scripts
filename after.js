@@ -1,6 +1,5 @@
-module.exports = function(dataset) {
+module.exports = function(dataset, db) {
   var Mustache = require('mustache')
-  var db = require('./dbconfig.js')
   var exec = require('child_process').exec
   var fs = require('fs')
 
@@ -13,7 +12,7 @@ module.exports = function(dataset) {
       runCommand();
     }
   })
-  
+
   function runCommand() {
     var command = Mustache.render('psql -d {{database}} -U {{user}} -f {{{path}}}after.sql', {
       user: db.user,
@@ -25,5 +24,5 @@ module.exports = function(dataset) {
       console.log(err, stdout, stderr);
     });
   }
-  
+
 }
