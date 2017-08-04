@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "get": "node loader get",
+    "get": "node get",
     "preprocess": "node loader preprocess",
     "push": "node loader push",
     "after": "node loader after"
@@ -28,6 +28,7 @@
     "fs-extra": "^4.0.1",
     "fs-path": "0.0.23",
     "ftp-get": "^0.3.1",
+    "minimist": "^1.2.0",
     "mustache": "^2.2.1",
     "unzip": "^0.1.11"
   }
