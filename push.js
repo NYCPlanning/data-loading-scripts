@@ -1,6 +1,16 @@
 var c = require('child_process');
 
-module.exports = function(dataset, db) {
+var dataset = process.argv[2];
+var argv = require('minimist')(process.argv.slice(3));
+
+var download_dir = argv.download_dir + "/";
+
+db = {
+  db: arv.database,
+  db_user: argv.db_user,
+}
+
+var Push = function(dataset, db) {
   return new Promise(
       function(resolve, reject) {
         //load dependencies
@@ -23,7 +33,7 @@ module.exports = function(dataset, db) {
           (function push(i) {
             console.log(i);
             if(i < loadFiles.length) {
-              var filePath = './temp/' + dataset + '/' + loadFiles[i].file
+              var filePath = download_dir + '/' + dataset + '/' + loadFiles[i].file
 
               var shp2pgsqlOptions = {
                 options: config.shp2pgsql.join(' '),
@@ -139,3 +149,5 @@ module.exports = function(dataset, db) {
       }
     )
 }
+
+Push(dataset, db);
