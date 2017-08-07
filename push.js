@@ -6,8 +6,8 @@ var argv = require('minimist')(process.argv.slice(3));
 var download_dir = argv.download_dir + "/";
 
 db = {
-  db: argv.database,
-  db_user: argv.db_user,
+  database: argv.db,
+  user: argv.db_user,
 }
 
 var Push = function(dataset, db) {
