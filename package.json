@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "get": "node get",
-    "preprocess": "node loader preprocess",
-    "push": "node loader push",
-    "after": "node loader after"
+    "preprocess": "node preprocess",
+    "push": "node push",
+    "after": "node after"
   },
   "repository": {
     "type": "git",
