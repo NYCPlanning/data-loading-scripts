@@ -6,7 +6,7 @@ var argv = require('minimist')(process.argv.slice(3));
 var download_dir = argv.download_dir + "/";
 
 db = {
-  db: arv.database,
+  db: argv.database,
   db_user: argv.db_user,
 }
 
