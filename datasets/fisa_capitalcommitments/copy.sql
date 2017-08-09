@@ -1,0 +1,1 @@
+\COPY fisa_capitalcommitments FROM './temp/fisa_capitalcommitments/fisa_capitalcommitments.csv' CSV HEADER;
