@@ -47,9 +47,14 @@ var Push = function(dataset, db) {
 
               console.log('Executing: ' + shp2pgsql);
               exec(shp2pgsql, {}, function(err, stdout, stderr) {
-                  console.log(err, stdout, stderr);
-                  i++;
-                  (i==loadFiles.length) ? resolve() : push(i);
+                if (err) {
+                  process.exit(1);
+                }
+
+                console.log(err, stdout, stderr);
+
+                i++;
+                (i==loadFiles.length) ? resolve() : push(i);
               })
             }
           })(0);
@@ -81,9 +86,12 @@ var Push = function(dataset, db) {
 
               console.log('Executing: ' + ogr2ogr);
               exec(ogr2ogr, {}, function(err, stdout, stderr) {
-                  console.log(err, stdout, stderr);
-                  i++;
-                  (i==loadFiles.length) ? resolve() : push(i);
+                if (err) {
+                  process.exit(1);
+                }
+                console.log(err, stdout, stderr);
+                i++;
+                (i==loadFiles.length) ? resolve() : push(i);
               })
             }
           })(0);

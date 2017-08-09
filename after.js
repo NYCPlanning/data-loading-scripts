@@ -28,6 +28,10 @@ function runCommand() {
   });
 
   exec(command, {}, function(err, stdout, stderr) {
+    if (err) {
+      process.exit(1);
+    }
+
     console.log(err, stdout, stderr);
   });
 }
