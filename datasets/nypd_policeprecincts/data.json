@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nypd_policeprecincts.shp",
+      "file":"geo_export_c0ad9d47-697c-4f2e-af78-756285dd25b0.shp",
       "table": "nypd_policeprecincts"
     }
   ],
