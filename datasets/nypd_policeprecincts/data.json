@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/geospatial/72wx-vdjr?method=export&format=Shapefile",
+  "saveFile": "nypd_policeprecincts.zip",
+  "load": "shp2pgsql",
+  "loadFiles": [
+    {
+      "file":"nypd_policeprecincts.shp",
+      "table": "nypd_policeprecincts"
+    }
+  ],
+  "shp2pgsql": [
+    "-d",
+    "-s 4326:4326"
+  ]
+}
