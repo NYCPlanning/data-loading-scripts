@@ -1,5 +1,6 @@
 {
   "url": "https://data.cityofnewyork.us/api/geospatial/h4i2-acfi?method=export&format=Original",
+  "saveFile": "dcp_statesenatedistricts.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {

@@ -1,5 +1,6 @@
 {
   "url": "https://data.cityofnewyork.us/api/geospatial/pf5b-73bw?method=export&format=Original",
+  "saveFile": "dcp_stateassemblydistricts.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {

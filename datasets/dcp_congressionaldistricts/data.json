@@ -1,5 +1,6 @@
 {
   "url": "https://data.cityofnewyork.us/api/geospatial/qd3c-zuu7?method=export&format=Original",
+  "saveFile": "dcp_congressionaldistricts.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
