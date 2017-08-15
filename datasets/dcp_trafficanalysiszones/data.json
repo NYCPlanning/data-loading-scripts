@@ -1,5 +1,6 @@
 {
   "url": "https://raw.githubusercontent.com/NYCPlanning/capital-planning-platform/master/public/data/TrafficAnalysisZones.geojson?token=AFWhuJjR-GQa8QHW_mDBcdMAzVy2HVN9ks5ZnI2zwA%3D%3D",
+  "saveFile": "dcp_trafficanalysiszones.json",
   "load": "org2ogr",
   "loadFiles": [
     {
