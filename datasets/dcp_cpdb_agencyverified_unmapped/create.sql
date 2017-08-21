@@ -1,6 +1,6 @@
 -- create table to load csv from the nyc open data portal text
-DROP TABLE IF EXISTS ACS_unmapped;
-CREATE TABLE ACS_unmapped (
+DROP TABLE IF EXISTS acs_unmapped;
+CREATE TABLE acs_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -13,8 +13,8 @@ CREATE TABLE ACS_unmapped (
 	agency text
 );
 
-DROP TABLE IF EXISTS DOC_unmapped;
-CREATE TABLE DOC_unmapped (
+DROP TABLE IF EXISTS doc_unmapped;
+CREATE TABLE doc_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -27,8 +27,8 @@ CREATE TABLE DOC_unmapped (
 	agency text
 );
 
-DROP TABLE IF EXISTS DOHMH_unmapped;
-CREATE TABLE DOHMH_unmapped (
+DROP TABLE IF EXISTS dohmh_unmapped;
+CREATE TABLE dohmh_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -41,8 +41,8 @@ CREATE TABLE DOHMH_unmapped (
 	agency text
 );
 
-DROP TABLE IF EXISTS DOT_unmapped;
-CREATE TABLE DOT_unmapped (
+DROP TABLE IF EXISTS dot_unmapped;
+CREATE TABLE dot_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -55,8 +55,8 @@ CREATE TABLE DOT_unmapped (
 	agency text
 );
 
-DROP TABLE IF EXISTS HHC_unmapped;
-CREATE TABLE HHC_unmapped (
+DROP TABLE IF EXISTS hhc_unmapped;
+CREATE TABLE hhc_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -69,8 +69,8 @@ CREATE TABLE HHC_unmapped (
 	agency text
 );
 
-DROP TABLE IF EXISTS HRA_unmapped;
-CREATE TABLE HRA_unmapped (
+DROP TABLE IF EXISTS hra_unmapped;
+CREATE TABLE hra_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -83,8 +83,8 @@ CREATE TABLE HRA_unmapped (
 	agency text
 );
 
-DROP TABLE IF EXISTS OCA_unmapped;
-CREATE TABLE OCA_unmapped (
+DROP TABLE IF EXISTS oca_unmapped;
+CREATE TABLE oca_unmapped (
 	maprojid text,
 	description text,
 	category text,
