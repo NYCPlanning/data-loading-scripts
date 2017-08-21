@@ -1,23 +1,23 @@
 DROP TABLE IF EXISTS dcp_cpdb_agencyverified_ummapped;
 CREATE TABLE dcp_cpdb_agencyverified_ummapped AS 
-SELECT * FROM acsunmapped
+SELECT * FROM ACS_unmapped
 UNION ALL
-SELECT * FROM docunmapped
+SELECT * FROM DOC_unmapped
 UNION ALL
-SELECT * FROM dohmhunmapped
+SELECT * FROM DOHMH_unmapped
 UNION ALL
-SELECT * FROM dotunmapped
+SELECT * FROM DOT_unmapped
 UNION ALL
-SELECT * FROM hhcunmapped
+SELECT * FROM HHC_unmapped
 UNION ALL
-SELECT * FROM hraunmapped
+SELECT * FROM HRA_unmapped
 UNION ALL
-SELECT * FROM ocaunmapped;
+SELECT * FROM OCA_unmapped;
 
-DROP TABLE acsunmapped;
-DROP TABLE docunmapped;
-DROP TABLE dohmhunmapped;
-DROP TABLE dotunmapped;
-DROP TABLE hhcunmapped;
-DROP TABLE hraunmapped;
-DROP TABLE ocaunmapped;
+DROP TABLE ACS_unmapped;
+DROP TABLE DOC_unmapped;
+DROP TABLE DOHMH_unmapped;
+DROP TABLE DOT_unmapped;
+DROP TABLE HHC_unmapped;
+DROP TABLE HRA_unmapped;
+DROP TABLE OCA_unmapped;
