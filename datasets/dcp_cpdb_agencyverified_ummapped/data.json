@@ -5,31 +5,31 @@
   "loadFiles": [
     {
       "file": "ACS_unmapped.csv",
-      "table": "acsunmapped"
+      "table": "ACS_unmapped"
     },
     {
       "file": "DOC_unmapped.csv",
-      "table": "docunmapped"
+      "table": "DOC_unmapped"
     },
     {
       "file": "DOHMH_unmapped.csv",
-      "table": "dohmhunmapped"
+      "table": "DOHMH_unmapped"
     },
     {
       "file": "DOT_unmapped.csv",
-      "table": "dotunmapped"
+      "table": "DOT_unmapped"
     },
     {
       "file": "HHC_unmapped.csv",
-      "table": "hhcunmapped"
+      "table": "HHC_unmapped"
     },
     {
       "file": "HRA_unmapped.csv",
-      "table": "hraunmapped"
+      "table": "HRA_unmapped"
     },
     {
       "file": "OCA_unmapped.csv",
-      "table": "ocaunmapped"
+      "table": "OCA_unmapped"
     }
   ],
   "csv": [ 
