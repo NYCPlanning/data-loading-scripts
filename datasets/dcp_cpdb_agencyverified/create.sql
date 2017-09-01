@@ -10,7 +10,8 @@ CREATE TABLE acs_unmapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS doc_mapped;
@@ -24,7 +25,8 @@ CREATE TABLE doc_mapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS doc_unmapped;
@@ -38,7 +40,8 @@ CREATE TABLE doc_unmapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS dohmh_mapped;
@@ -52,7 +55,8 @@ CREATE TABLE dohmh_mapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS dohmh_unmapped;
@@ -66,7 +70,8 @@ CREATE TABLE dohmh_unmapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS dot_mapped;
@@ -80,7 +85,8 @@ CREATE TABLE dot_mapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS dot_unmapped;
@@ -94,7 +100,8 @@ CREATE TABLE dot_unmapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS hhc_mapped;
@@ -108,7 +115,8 @@ CREATE TABLE hhc_mapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS hhc_unmapped;
@@ -122,7 +130,8 @@ CREATE TABLE hhc_unmapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS hra_mapped;
@@ -136,7 +145,8 @@ CREATE TABLE hra_mapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS hra_unmapped;
@@ -150,7 +160,8 @@ CREATE TABLE hra_unmapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS oca_mapped;
@@ -164,7 +175,8 @@ CREATE TABLE oca_mapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
 
 DROP TABLE IF EXISTS oca_unmapped;
@@ -178,5 +190,6 @@ CREATE TABLE oca_unmapped (
 	zipcode text,
 	bbl text,
 	bin text,
-	agency text
+	agency text,
+	origin text
 );
