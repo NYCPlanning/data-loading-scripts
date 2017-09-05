@@ -1,6 +1,51 @@
 -- create table to load csv from the nyc open data portal text
+DROP TABLE IF EXISTS acs_mapped;
+CREATE TABLE acs_mapped (
+	maprojid text,
+	description text,
+	category text,
+	mappable text,
+	address text,
+	borough text,
+	zipcode text,
+	bbl text,
+	bin text,
+	agency text,
+	origin text
+);
+
 DROP TABLE IF EXISTS acs_unmapped;
 CREATE TABLE acs_unmapped (
+	maprojid text,
+	description text,
+	category text,
+	mappable text,
+	address text,
+	borough text,
+	zipcode text,
+	bbl text,
+	bin text,
+	agency text,
+	origin text
+);
+
+DROP TABLE IF EXISTS dhs_mapped;
+CREATE TABLE dhs_mapped (
+	maprojid text,
+	description text,
+	category text,
+	mappable text,
+	address text,
+	borough text,
+	zipcode text,
+	bbl text,
+	bin text,
+	agency text,
+	origin text
+);
+
+DROP TABLE IF EXISTS dhs_unmapped;
+CREATE TABLE dhs_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -165,7 +210,7 @@ CREATE TABLE hra_unmapped (
 );
 
 DROP TABLE IF EXISTS nypd_mapped;
-CREATE TABLE oca_mapped (
+CREATE TABLE nypd_mapped (
 	maprojid text,
 	description text,
 	category text,
@@ -180,7 +225,7 @@ CREATE TABLE oca_mapped (
 );
 
 DROP TABLE IF EXISTS nypd_unmapped;
-CREATE TABLE oca_unmapped (
+CREATE TABLE nypd_unmapped (
 	maprojid text,
 	description text,
 	category text,

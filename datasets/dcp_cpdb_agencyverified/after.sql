@@ -1,6 +1,12 @@
 DROP TABLE IF EXISTS dcp_cpdb_agencyverified;
 CREATE TABLE dcp_cpdb_agencyverified AS 
+SELECT * FROM acs_mapped
+UNION ALL
 SELECT * FROM acs_unmapped
+UNION ALL
+SELECT * FROM dhs_mapped
+UNION ALL
+SELECT * FROM dhs_unmapped
 UNION ALL
 SELECT * FROM doc_mapped
 UNION ALL
@@ -30,7 +36,10 @@ SELECT * FROM oca_mapped
 UNION ALL
 SELECT * FROM oca_unmapped;
 
+DROP TABLE acs_mapped;
 DROP TABLE acs_unmapped;
+DROP TABLE dhs_mapped;
+DROP TABLE dhs_unmapped;
 DROP TABLE doc_mapped;
 DROP TABLE doc_unmapped;
 DROP TABLE dohmh_mapped;

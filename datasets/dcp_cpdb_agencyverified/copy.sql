@@ -1,4 +1,7 @@
+\COPY acs_mapped FROM './temp/dcp_cpdb_agencyverified/ACS_mapped.csv' CSV HEADER;
 \COPY acs_unmapped FROM './temp/dcp_cpdb_agencyverified/ACS_unmapped.csv' CSV HEADER;
+\COPY dhs_mapped FROM './temp/dcp_cpdb_agencyverified/DHS_mapped.csv' CSV HEADER;
+\COPY dhs_unmapped FROM './temp/dcp_cpdb_agencyverified/DHS_unmapped.csv' CSV HEADER;
 \COPY doc_mapped FROM './temp/dcp_cpdb_agencyverified/DOC_mapped.csv' CSV HEADER;
 \COPY doc_unmapped FROM './temp/dcp_cpdb_agencyverified/DOC_unmapped.csv' CSV HEADER;
 \COPY dohmh_mapped FROM './temp/dcp_cpdb_agencyverified/DOHMH_mapped.csv' CSV HEADER;

@@ -11,6 +11,14 @@
       "table": "ACS_unmapped"
     },
     {
+      "file": "DHS_mapped.csv",
+      "table": "DHS_mapped"
+    },
+    {
+      "file": "DHS_unmapped.csv",
+      "table": "DHS_unmapped"
+    },
+    {
       "file": "DOC_mapped.csv",
       "table": "DOC_mapped"
     },
