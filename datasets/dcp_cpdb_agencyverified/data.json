@@ -3,6 +3,10 @@
   "load": "csv",
   "loadFiles": [
     {
+      "file": "ACS_mapped.csv",
+      "table": "ACS_mapped"
+    },
+    {
       "file": "ACS_unmapped.csv",
       "table": "ACS_unmapped"
     },
@@ -46,6 +50,14 @@
       "file": "HRA_unmapped.csv",
       "table": "HRA_unmapped"
     },    
+    {
+      "file": "NYPD_mapped.csv",
+      "table": "NYPD_mapped"
+    },
+    {
+      "file": "NYPD_unmapped.csv",
+      "table": "NYPD_unmapped"
+    },
     {
       "file": "OCA_mapped.csv",
       "table": "OCA_mapped"

@@ -9,5 +9,7 @@
 \COPY hhc_unmapped FROM './temp/dcp_cpdb_agencyverified/HHC_unmapped.csv' CSV HEADER;
 \COPY hra_mapped FROM './temp/dcp_cpdb_agencyverified/HRA_mapped.csv' CSV HEADER;
 \COPY hra_unmapped FROM './temp/dcp_cpdb_agencyverified/HRA_unmapped.csv' CSV HEADER;
+\COPY nypd_mapped FROM './temp/dcp_cpdb_agencyverified/NYPD_mapped.csv' CSV HEADER;
+\COPY nypd_unmapped FROM './temp/dcp_cpdb_agencyverified/NYPD_unmapped.csv' CSV HEADER;
 \COPY oca_mapped FROM './temp/dcp_cpdb_agencyverified/OCA_mapped.csv' CSV HEADER;
 \COPY oca_unmapped FROM './temp/dcp_cpdb_agencyverified/OCA_unmapped.csv' CSV HEADER;

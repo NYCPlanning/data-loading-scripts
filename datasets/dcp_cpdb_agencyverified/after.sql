@@ -22,6 +22,10 @@ SELECT * FROM hra_mapped
 UNION ALL
 SELECT * FROM hra_unmapped
 UNION ALL
+SELECT * FROM nypd_mapped
+UNION ALL
+SELECT * FROM nypd_unmapped
+UNION ALL
 SELECT * FROM oca_mapped
 UNION ALL
 SELECT * FROM oca_unmapped;
@@ -37,5 +41,7 @@ DROP TABLE hhc_mapped;
 DROP TABLE hhc_unmapped;
 DROP TABLE hra_mapped;
 DROP TABLE hra_unmapped;
+DROP TABLE nypd_mapped;
+DROP TABLE nypd_unmapped;
 DROP TABLE oca_mapped;
 DROP TABLE oca_unmapped;

@@ -164,6 +164,36 @@ CREATE TABLE hra_unmapped (
 	origin text
 );
 
+DROP TABLE IF EXISTS nypd_mapped;
+CREATE TABLE oca_mapped (
+	maprojid text,
+	description text,
+	category text,
+	mappable text,
+	address text,
+	borough text,
+	zipcode text,
+	bbl text,
+	bin text,
+	agency text,
+	origin text
+);
+
+DROP TABLE IF EXISTS nypd_unmapped;
+CREATE TABLE oca_unmapped (
+	maprojid text,
+	description text,
+	category text,
+	mappable text,
+	address text,
+	borough text,
+	zipcode text,
+	bbl text,
+	bin text,
+	agency text,
+	origin text
+);
+
 DROP TABLE IF EXISTS oca_mapped;
 CREATE TABLE oca_mapped (
 	maprojid text,
