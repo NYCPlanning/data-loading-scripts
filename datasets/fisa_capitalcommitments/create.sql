@@ -1,5 +1,5 @@
 -- create table to load csv from the ftp
-DROP TABLE IF EXISTS fisa_capitalcommitments;
+DROP TABLE IF EXISTS fisa_capitalcommitments CASCADE;
 CREATE TABLE fisa_capitalcommitments (
 	cycle_fy text,
 	cycle_name text,
@@ -22,3 +22,4 @@ CREATE TABLE fisa_capitalcommitments (
 	typ_category text,
 	typ_category_name text
 	)
+;
