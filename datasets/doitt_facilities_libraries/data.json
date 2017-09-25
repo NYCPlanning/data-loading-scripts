@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"geo_export_bd845097-e166-434b-b7b2-b51afdff081d.shp",
+      "file":"geo_export_4c20dae7-e3be-491e-9c8d-23e665535226.shp",
       "table": "doitt_facilities_libraries"
     }
   ],
