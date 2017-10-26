@@ -1,5 +1,7 @@
 \COPY acs_mapped FROM './temp/dcp_cpdb_agencyverified/ACS_mapped.csv' CSV HEADER;
 \COPY acs_unmapped FROM './temp/dcp_cpdb_agencyverified/ACS_unmapped.csv' CSV HEADER;
+\COPY bpl_mapped FROM './temp/dcp_cpdb_agencyverified/ACS_mapped.csv' CSV HEADER;
+\COPY bpl_unmapped FROM './temp/dcp_cpdb_agencyverified/ACS_unmapped.csv' CSV HEADER;
 \COPY dhs_mapped FROM './temp/dcp_cpdb_agencyverified/DHS_mapped.csv' CSV HEADER;
 \COPY dhs_unmapped FROM './temp/dcp_cpdb_agencyverified/DHS_unmapped.csv' CSV HEADER;
 \COPY doc_mapped FROM './temp/dcp_cpdb_agencyverified/DOC_mapped.csv' CSV HEADER;
@@ -8,11 +10,19 @@
 \COPY dohmh_unmapped FROM './temp/dcp_cpdb_agencyverified/DOHMH_unmapped.csv' CSV HEADER;
 \COPY dot_mapped FROM './temp/dcp_cpdb_agencyverified/DOT_mapped.csv' CSV HEADER;
 \COPY dot_unmapped FROM './temp/dcp_cpdb_agencyverified/DOT_unmapped.csv' CSV HEADER;
+\COPY dpr_mapped FROM './temp/dcp_cpdb_agencyverified/DOT_mapped.csv' CSV HEADER;
+\COPY dpr_unmapped FROM './temp/dcp_cpdb_agencyverified/DOT_unmapped.csv' CSV HEADER;
+\COPY fdny_mapped FROM './temp/dcp_cpdb_agencyverified/DOT_mapped.csv' CSV HEADER;
+\COPY fdny_unmapped FROM './temp/dcp_cpdb_agencyverified/DOT_unmapped.csv' CSV HEADER;
 \COPY hhc_mapped FROM './temp/dcp_cpdb_agencyverified/HHC_mapped.csv' CSV HEADER;
 \COPY hhc_unmapped FROM './temp/dcp_cpdb_agencyverified/HHC_unmapped.csv' CSV HEADER;
 \COPY hra_mapped FROM './temp/dcp_cpdb_agencyverified/HRA_mapped.csv' CSV HEADER;
 \COPY hra_unmapped FROM './temp/dcp_cpdb_agencyverified/HRA_unmapped.csv' CSV HEADER;
+\COPY nycha_mapped FROM './temp/dcp_cpdb_agencyverified/NYPD_mapped.csv' CSV HEADER;
+\COPY nycha_unmapped FROM './temp/dcp_cpdb_agencyverified/NYPD_unmapped.csv' CSV HEADER;
 \COPY nypd_mapped FROM './temp/dcp_cpdb_agencyverified/NYPD_mapped.csv' CSV HEADER;
 \COPY nypd_unmapped FROM './temp/dcp_cpdb_agencyverified/NYPD_unmapped.csv' CSV HEADER;
+\COPY nypl_mapped FROM './temp/dcp_cpdb_agencyverified/NYPD_mapped.csv' CSV HEADER;
+\COPY nypl_unmapped FROM './temp/dcp_cpdb_agencyverified/NYPD_unmapped.csv' CSV HEADER;
 \COPY oca_mapped FROM './temp/dcp_cpdb_agencyverified/OCA_mapped.csv' CSV HEADER;
 \COPY oca_unmapped FROM './temp/dcp_cpdb_agencyverified/OCA_unmapped.csv' CSV HEADER;

@@ -11,6 +11,14 @@
       "table": "ACS_unmapped"
     },
     {
+      "file": "BPL_mapped.csv",
+      "table": "BPL_mapped"
+    },
+    {
+      "file": "BPL_unmapped.csv",
+      "table": "BPL_unmapped"
+    },
+    {
       "file": "DHS_mapped.csv",
       "table": "DHS_mapped"
     },
@@ -43,6 +51,22 @@
       "table": "DOT_unmapped"
     },
     {
+      "file": "DPR_mapped.csv",
+      "table": "DPR_mapped"
+    },
+    {
+      "file": "DPR_unmapped.csv",
+      "table": "DPR_unmapped"
+    },
+    {
+      "file": "FDNY_mapped.csv",
+      "table": "FDNY_mapped"
+    },
+     {
+      "file": "FDNY_unmapped.csv",
+      "table": "FDNY_unmapped"
+    },
+    {
       "file": "HHC_mapped.csv",
       "table": "HHC_mapped"
     },
@@ -57,7 +81,15 @@
     {
       "file": "HRA_unmapped.csv",
       "table": "HRA_unmapped"
-    },    
+    },
+    {
+      "file": "NYCHA_mapped.csv",
+      "table": "NYCHA_mapped"
+    },
+    {
+      "file": "NYCHA_unmapped.csv",
+      "table": "NYCHA_unmapped"
+    },  
     {
       "file": "NYPD_mapped.csv",
       "table": "NYPD_mapped"
@@ -65,6 +97,14 @@
     {
       "file": "NYPD_unmapped.csv",
       "table": "NYPD_unmapped"
+    },
+    {
+      "file": "NYPL_mapped.csv",
+      "table": "NYPL_mapped"
+    },
+    {
+      "file": "NYPL_unmapped.csv",
+      "table": "NYPL_unmapped"
     },
     {
       "file": "OCA_mapped.csv",
