@@ -55,10 +55,6 @@
       "table": "DPR_mapped"
     },
     {
-      "file": "DPR_unmapped.csv",
-      "table": "DPR_unmapped"
-    },
-    {
       "file": "FDNY_mapped.csv",
       "table": "FDNY_mapped"
     },
