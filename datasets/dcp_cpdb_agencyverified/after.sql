@@ -26,8 +26,6 @@ SELECT * FROM dot_unmapped
 UNION ALL
 SELECT * FROM dpr_mapped
 UNION ALL
-SELECT * FROM dpr_unmapped
-UNION ALL
 SELECT * FROM fdny_mapped
 UNION ALL
 SELECT * FROM fdny_unmapped
@@ -69,7 +67,6 @@ DROP TABLE dohmh_unmapped;
 DROP TABLE dot_mapped;
 DROP TABLE dot_unmapped;
 DROP TABLE dpr_mapped;
-DROP TABLE dpr_unmapped;
 DROP TABLE fdny_mapped;
 DROP TABLE fdny_unmapped;
 DROP TABLE hhc_mapped;

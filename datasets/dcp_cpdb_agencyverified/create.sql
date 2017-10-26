@@ -30,7 +30,7 @@ CREATE TABLE acs_unmapped (
 );
 
 DROP TABLE IF EXISTS bpl_mapped;
-CREATE TABLE dhs_mapped (
+CREATE TABLE bpl_mapped (
 	maprojid text,
 	description text,
 	category text,
@@ -45,7 +45,7 @@ CREATE TABLE dhs_mapped (
 );
 
 DROP TABLE IF EXISTS bpl_unmapped;
-CREATE TABLE dhs_unmapped (
+CREATE TABLE bpl_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -180,22 +180,7 @@ CREATE TABLE dot_unmapped (
 );
 
 DROP TABLE IF EXISTS dpr_mapped;
-CREATE TABLE dot_mapped (
-	maprojid text,
-	description text,
-	category text,
-	mappable text,
-	address text,
-	borough text,
-	zipcode text,
-	bbl text,
-	bin text,
-	agency text,
-	origin text
-);
-
-DROP TABLE IF EXISTS dpr_unmapped;
-CREATE TABLE dot_unmapped (
+CREATE TABLE dpr_mapped (
 	maprojid text,
 	description text,
 	category text,
@@ -210,7 +195,7 @@ CREATE TABLE dot_unmapped (
 );
 
 DROP TABLE IF EXISTS fdny_mapped;
-CREATE TABLE hhc_mapped (
+CREATE TABLE fdny_mapped (
 	maprojid text,
 	description text,
 	category text,
@@ -225,7 +210,7 @@ CREATE TABLE hhc_mapped (
 );
 
 DROP TABLE IF EXISTS fdny_unmapped;
-CREATE TABLE hhc_unmapped (
+CREATE TABLE fdny_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -300,7 +285,7 @@ CREATE TABLE hra_unmapped (
 );
 
 DROP TABLE IF EXISTS nycha_mapped;
-CREATE TABLE nypd_mapped (
+CREATE TABLE nycha_mapped (
 	maprojid text,
 	description text,
 	category text,
@@ -315,7 +300,7 @@ CREATE TABLE nypd_mapped (
 );
 
 DROP TABLE IF EXISTS nycha_unmapped;
-CREATE TABLE nypd_unmapped (
+CREATE TABLE nycha_unmapped (
 	maprojid text,
 	description text,
 	category text,
@@ -360,7 +345,7 @@ CREATE TABLE nypd_unmapped (
 );
 
 DROP TABLE IF EXISTS nypl_mapped;
-CREATE TABLE nypd_mapped (
+CREATE TABLE nypl_mapped (
 	maprojid text,
 	description text,
 	category text,
@@ -375,7 +360,7 @@ CREATE TABLE nypd_mapped (
 );
 
 DROP TABLE IF EXISTS nypl_unmapped;
-CREATE TABLE nypd_unmapped (
+CREATE TABLE nypl_unmapped (
 	maprojid text,
 	description text,
 	category text,
