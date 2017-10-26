@@ -1,0 +1,14 @@
+{
+ "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/edc/edc_capitalprojects_ferry.zip",
+ "load": "shp2pgsql",
+ "loadFiles": [
+  {
+    "file": "edc_capitalprojects_ferry.shp",
+    "table": "edc_capitalprojects_ferry"
+  } 
+ ], 
+ "shp2pgsql": [ 
+   "-d",
+   "-s 2263:4326"
+ ] 
+}
