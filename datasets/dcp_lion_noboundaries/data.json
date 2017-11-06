@@ -1,13 +1,14 @@
 {
-  "load": "shp2pgsql",
+  "url": "http://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/LION/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson",
+  "saveFile": "dcp_lion.json",
+  "load": "org2ogr",
   "loadFiles": [
     {
-      "file":"lion_nodistrictboundaryorshoreline/lion_nodistrictboundaryorshoreline.shp",
-      "table": "dcp_lion_noboundaries"
+      "file":"dcp_lion.json",
+      "table": "dcp_lion"
     }
   ],
-  "shp2pgsql": [ 
-    "-d",
-    "-s 2263:4326"
-  ] 
+  "saveFile":"dcp_lion.json",
+  "ogr2ogr": [ 
+        ] 
 }
