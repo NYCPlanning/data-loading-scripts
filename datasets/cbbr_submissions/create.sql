@@ -2,9 +2,12 @@
 DROP TABLE IF EXISTS cbbr_commboard_regid;
 CREATE TABLE cbbr_commboard_regid (
 	regid text,
+	regdate text,
+	progress text,
 	name text,
 	borough text,
-	commdist text
+	commdist text,
+	datelastupdate text
 );
 
 DROP TABLE IF EXISTS cbbr_requests_main;
@@ -36,7 +39,11 @@ CREATE TABLE cbbr_requests_main (
 	uploads text,
 	trackingnum text,
 	firstyrsubmitted text,
-	kill text
+	kill text,
+	respdesc text,
+	agyresponse text,
+	agyresponsecat text,
+	datelastupdate text
 );
 
 DROP TABLE IF EXISTS cbbr_requests_other;
@@ -68,5 +75,9 @@ CREATE TABLE cbbr_requests_other (
 	uploads text,
 	trackingnum text,
 	firstyrsubmitted text,
-	kill text
+	kill text,
+	respdesc text,
+	agyresponse text,
+	agyresponsecat text,
+	datelastupdate text
 );
