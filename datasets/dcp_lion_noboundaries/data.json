@@ -4,7 +4,7 @@
  "loadFiles": [
   {
     "file": "dcp_lion_roadbeds.shp",
-    "table": "dcp_lion"
+    "table": "dcp_lion_roadbeds"
   } 
  ], 
  "shp2pgsql": [ 
