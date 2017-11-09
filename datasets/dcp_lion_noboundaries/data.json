@@ -1,14 +1,14 @@
 {
-  "url": "http://services5.arcgis.com/GfwWNkhOj9bNBqoJ/arcgis/rest/services/LION/FeatureServer/0/query?where=1=1&outFields=*&outSR=4326&f=geojson",
-  "saveFile": "dcp_lion.json",
-  "load": "org2ogr",
-  "loadFiles": [
-    {
-      "file":"dcp_lion.json",
-      "table": "dcp_lion"
-    }
-  ],
-  "saveFile":"dcp_lion.json",
-  "ogr2ogr": [ 
-        ] 
+ "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/ddc_lion_roadbeds.zip",
+ "load": "shp2pgsql",
+ "loadFiles": [
+  {
+    "file": "ddc_lion_roadbeds.shp",
+    "table": "ddc_lion"
+  } 
+ ], 
+ "shp2pgsql": [ 
+   "-d",
+   "-s 2263:4326"
+ ] 
 }
