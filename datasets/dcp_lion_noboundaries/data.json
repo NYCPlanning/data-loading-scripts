@@ -3,7 +3,7 @@
  "load": "shp2pgsql",
  "loadFiles": [
   {
-    "file": "ddc_lion_roadbeds.shp",
+    "file": "ddc_lion_roadbeds/ddc_lion_roadbeds.shp",
     "table": "ddc_lion"
   } 
  ], 
