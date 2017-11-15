@@ -1,0 +1,15 @@
+{
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/dot_actuals_fy2001tofy2018.csv",
+  "saveFile": "dot_actuals_fy2001tofy2018.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dot_actuals_fy2001tofy2018.csv",
+      "table": "dot_actuals_fy2001tofy2018"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
