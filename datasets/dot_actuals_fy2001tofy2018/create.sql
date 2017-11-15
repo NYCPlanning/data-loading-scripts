@@ -30,5 +30,6 @@ CREATE TABLE dot_actuals_fy2001tofy2018(
     sumfy01to18ytd text,
     acct text,
     acctdesc text,
-    bldesc text
+    bldesc text,
+    geomsource text
     )
