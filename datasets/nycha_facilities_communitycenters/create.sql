@@ -7,5 +7,13 @@ CREATE TABLE nycha_facilities_communitycenters (
 	STATUS text,
 	SPONSOR text,
 	ZIP_CODE text,
-	TYPE text
+	TYPE text,
+	LATITUDE text,
+	LONGITUDE text,
+	COMMUNITY BOARD text,
+	COMMUNITY COUNCIL text,
+	CENSUS TRACT text,
+	BIN text,
+	BBL text,
+	NTA text
 )
