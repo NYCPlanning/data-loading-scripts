@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/5pbr-mxtd/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "hra_idnyc_locations.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"hra_idnyc_locations.csv",
+      "table": "hra_idnyc_locations"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
