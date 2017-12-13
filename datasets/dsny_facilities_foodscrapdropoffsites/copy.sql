@@ -1,0 +1,1 @@
+\COPY dsny_facilities_foodscrapdropoffsites FROM './temp/dsny_facilities_foodscrapdropoffsites/dsny_facilities_foodscrapdropoffsites.csv' CSV HEADER;

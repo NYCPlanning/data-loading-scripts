@@ -1,0 +1,1 @@
+\COPY dsny_facilities_refuseandrecyclingdisposalnetworks FROM './temp/dsny_facilities_refuseandrecyclingdisposalnetworks/dsny_facilities_refuseandrecyclingdisposalnetworks.csv' CSV HEADER;

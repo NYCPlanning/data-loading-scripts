@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/kzmz-ivhb/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "dsny_facilities_refuseandrecyclingdisposalnetworks.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dsny_facilities_refuseandrecyclingdisposalnetworks.csv",
+      "table": "dsny_facilities_refuseandrecyclingdisposalnetworks"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

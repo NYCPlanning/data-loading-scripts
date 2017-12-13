@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/rmmq-46n5/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "dsny_facilities_foodscrapdropoffsites.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dsny_facilities_foodscrapdropoffsites.csv",
+      "table": "dsny_facilities_foodscrapdropoffsites"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
