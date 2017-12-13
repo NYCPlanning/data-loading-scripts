@@ -1,0 +1,1 @@
+\COPY otm_mentalhealthservicefinder FROM './temp/otm_mentalhealthservicefinder/otm_mentalhealthservicefinder.csv' CSV HEADER;

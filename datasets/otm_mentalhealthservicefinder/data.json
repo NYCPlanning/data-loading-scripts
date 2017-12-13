@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/8nqg-ia7v/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "otm_mentalhealthservicefinder.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"otm_mentalhealthservicefinder.csv",
+      "table": "otm_mentalhealthservicefinder"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
