@@ -1,0 +1,15 @@
+{
+  "url": "https://health.data.ny.gov/api/views/izpu-8t68/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "nysdoh_cacfp.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"nysdoh_cacfp.csv",
+      "table": "nysdoh_cacfp"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

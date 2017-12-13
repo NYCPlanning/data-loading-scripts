@@ -1,0 +1,1 @@
+\COPY nysdoh_cacfp FROM './temp/nysdoh_cacfp/nysdoh_cacfp.csv' CSV HEADER;

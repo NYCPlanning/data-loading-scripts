@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/geospatial/ayer-cga7?method=export&format=Shapefile",
+  "saveFile": "em_hurricaneevacuationcenters.zip",
+  "load": "shp2pgsql",
+  "loadFiles": [
+    {
+      "file":"geo_export_d7a863ba-b24e-4f46-b399-3219513a41d6.shp",
+      "table": "em_hurricaneevacuationcenters"
+    }
+  ],
+  "shp2pgsql": [
+    "-d",
+    "-s 2263:4326"
+  ]
+}
