@@ -3,7 +3,7 @@
   "load": "org2ogr",
   "loadFiles": [
     {
-      "file":"Bridges15.geojson",
+      "file":"Bridges.geojson",
       "table": "dot_projects_bridges"
     }
   ],

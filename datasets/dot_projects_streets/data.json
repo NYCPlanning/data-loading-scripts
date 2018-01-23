@@ -3,7 +3,7 @@
   "load": "org2ogr",
   "loadFiles": [
     {
-      "file":"ProjectStreets16.geojson",
+      "file":"ProjectStreets.geojson",
       "table": "dot_projects_streets"
     }
   ],
