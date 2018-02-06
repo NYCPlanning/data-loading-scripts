@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/POPS_Export_Public_Official_Records_2018-1-11.csv",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/POPS_Addresses_through_2017_10_23.csv",
   "saveFile": "dcp_pops.csv",
   "load": "csv",
   "loadFiles": [
