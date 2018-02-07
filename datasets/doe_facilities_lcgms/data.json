@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/doe/LCGMS_SchoolData_20170619_1328.csv",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/doe/LCGMS_SchoolData_20180207_1057.csv",
   "saveFile": "doe_facilities_lcgms.csv",
   "load": "csv",
   "loadFiles": [
