@@ -10,9 +10,9 @@ CREATE TABLE nycha_facilities_communitycenters (
 	TYPE text,
 	LATITUDE text,
 	LONGITUDE text,
-	COMMUNITY BOARD text,
-	COMMUNITY COUNCIL text,
-	CENSUS TRACT text,
+	COMMUNITY_BOARD text,
+	COMMUNITY_COUNCIL text,
+	CENSUS_TRACT text,
 	BIN text,
 	BBL text,
 	NTA text
