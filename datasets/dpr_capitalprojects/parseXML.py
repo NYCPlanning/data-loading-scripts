@@ -30,14 +30,14 @@ for proj in list(range(num_proj)):
             lon = doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['Longitude']
             park_id = doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['ParkID']
             if lon is not None:
-            lonlats.append((float(lon), float(lat)))
-            park_ids.append(park_id)
+              lonlats.append((float(lon), float(lat)))
+              park_ids.append(park_id)
     else:
         lat = doc['root']['capitalproject'][proj]['Locations']['Location']['Latitude']
         lon = doc['root']['capitalproject'][proj]['Locations']['Location']['Longitude']
         park_id = doc['root']['capitalproject'][proj]['Locations']['Location']['ParkID']
         if lon is not None:
-        lonlats.append((float(lon), float(lat)))
+          lonlats.append((float(lon), float(lat)))
         if park_id is None:
             park_id = 'NA'
         park_ids.append(park_id)    
