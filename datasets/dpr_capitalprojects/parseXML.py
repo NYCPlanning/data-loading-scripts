@@ -24,7 +24,7 @@ for proj in list(range(num_proj)):
     total_funding =  doc['root']['capitalproject'][proj]['TotalFunding']
     lonlats = []
     park_ids = []
-    if lon is not None:
+    if doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['Latitude'] is not None:
       if type(doc['root']['capitalproject'][proj]['Locations']['Location']) is list:
           for loc in range(len(doc['root']['capitalproject'][proj]['Locations']['Location'])):
               lat = doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['Latitude']
