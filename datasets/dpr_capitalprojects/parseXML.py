@@ -22,29 +22,27 @@ for proj in list(range(num_proj)):
     fmsid = doc['root']['capitalproject'][proj]['FMSID']
     desc =  doc['root']['capitalproject'][proj]['Title']
     total_funding =  doc['root']['capitalproject'][proj]['TotalFunding']
-    location = doc['root']['capitalproject'][proj]['Locations']['Location']['Latitude']
     lonlats = []
     park_ids = []
-    if location is not None:
-      if type(doc['root']['capitalproject'][proj]['Locations']['Location']) is list:
-          for loc in range(len(doc['root']['capitalproject'][proj]['Locations']['Location'])):
-              lat = doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['Latitude']
-              lon = doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['Longitude']
-              park_id = doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['ParkID']
-              lonlats.append((float(lon), float(lat)))
-              park_ids.append(park_id)
-      else:
-          lat = doc['root']['capitalproject'][proj]['Locations']['Location']['Latitude']
-          lon = doc['root']['capitalproject'][proj]['Locations']['Location']['Longitude']
-          park_id = doc['root']['capitalproject'][proj]['Locations']['Location']['ParkID']
-          lonlats.append((float(lon), float(lat)))
-          if park_id is None:
-              park_id = 'NA'
-          park_ids.append(park_id)    
-      # parsed data combinations
-      lonlats = shapely.geometry.MultiPoint(lonlats)
-      park_ids = ','.join(p for p in park_ids)
-      caps.append([proj_id, fmsid, desc, total_funding, park_ids, lonlats])
+    if type(doc['root']['capitalproject'][proj]['Locations']['Location']) is list:
+        for loc in range(len(doc['root']['capitalproject'][proj]['Locations']['Location'])):
+            lat = doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['Latitude']
+            lon = doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['Longitude']
+            park_id = doc['root']['capitalproject'][proj]['Locations']['Location'][loc]['ParkID']
+            lonlats.append((float(lon), float(lat)))
+            park_ids.append(park_id)
+    else:
+        lat = doc['root']['capitalproject'][proj]['Locations']['Location']['Latitude']
+        lon = doc['root']['capitalproject'][proj]['Locations']['Location']['Longitude']
+        park_id = doc['root']['capitalproject'][proj]['Locations']['Location']['ParkID']
+        lonlats.append((float(lon), float(lat)))
+        if park_id is None:
+            park_id = 'NA'
+        park_ids.append(park_id)    
+    # parsed data combinations
+    lonlats = shapely.geometry.MultiPoint(lonlats)
+    park_ids = ','.join(p for p in park_ids)
+    caps.append([proj_id, fmsid, desc, total_funding, park_ids, lonlats])
 
 caps_df = gp.GeoDataFrame(caps,
                           columns = ['proj_id',
