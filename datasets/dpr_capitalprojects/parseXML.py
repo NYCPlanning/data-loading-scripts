@@ -37,7 +37,7 @@ for proj in list(range(num_proj)):
         park_id = doc['root']['capitalproject'][proj]['Locations']['Location']['ParkID']
         print(lon,lat)
         if lon is None:
-          lon = 0
+          return ''
         else:
           lonlats.append((float(lon), float(lat)))
         if park_id is None:
