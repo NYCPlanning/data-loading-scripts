@@ -35,6 +35,7 @@ for proj in list(range(num_proj)):
         lat = doc['root']['capitalproject'][proj]['Locations']['Location']['Latitude']
         lon = doc['root']['capitalproject'][proj]['Locations']['Location']['Longitude']
         park_id = doc['root']['capitalproject'][proj]['Locations']['Location']['ParkID']
+        print(lon,lat)
         lonlats.append((float(lon), float(lat)))
         if park_id is None:
             park_id = 'NA'
