@@ -38,6 +38,7 @@ for proj in list(range(num_proj)):
         print(lon,lat)
         if lon is None:
           return ''
+        return str(lon)
         else:
           lonlats.append((float(lon), float(lat)))
         if park_id is None:

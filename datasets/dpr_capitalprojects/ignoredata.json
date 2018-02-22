@@ -11,3 +11,5 @@
   "ogr2ogr": [ 
         ] 
 }
+
+postgres-import-json -f 'temp/dpr_capitalprojects/DPR_CapitalProjectTracker_001.json' -d capdb -t dpr_capitalprojects -h localhost -u dbadmin
