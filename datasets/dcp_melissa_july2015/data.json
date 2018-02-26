@@ -3,7 +3,7 @@
   "load": "csv",
   "loadFiles": [
     {
-      "file": "dcp_melissa_july2015.csv",
+      "file": "Melissa_July2015.csv",
       "table": "dcp_melissa_july2015"
     }
   ],

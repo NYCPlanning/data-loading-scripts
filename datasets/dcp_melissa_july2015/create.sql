@@ -1,14 +1,25 @@
 -- create table to load csv from the nyc open data portal text
 DROP TABLE IF EXISTS dcp_melissa_july2015;
 CREATE TABLE dcp_melissa_july2015 (
-	field1 text,
-	field2 text,
-	field3 text,
-	field4 text,
-	field5 text,
-	field6 text,
-	field7 text,
-	field8 text,
-	field9 text,
-	field10 text
+	rbdi text,
+	title text,
+	address text,
+	city text,
+	state text,
+	zip text,
+	plus4 text,
+	walkseq text,
+	crrt text,
+	endorse text,
+	city_rural text,
+	dpb text,
+	dpbc text,
+	prename text,
+	firstname text,
+	initial text,
+	lastname text,
+	postname text,
+	nameslug text,
+	updated text,
+	vacant text
 );
