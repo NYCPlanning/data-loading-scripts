@@ -1,0 +1,14 @@
+{
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/Melissa_July2015.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file": "Melissa_September2016.csv",
+      "table": "dcp_melissa_september2016"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
