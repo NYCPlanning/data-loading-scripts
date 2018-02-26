@@ -10,5 +10,5 @@ CREATE TABLE dcp_melissa_july2015 (
 	field7 text,
 	field8 text,
 	field9 text,
-	field10 text,
+	field10 text
 );
