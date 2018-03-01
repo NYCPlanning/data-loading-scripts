@@ -8,7 +8,7 @@
       "table": "dcp_pad_bobaadr"
     },
     {
-      "file":"bobaadr.txt",
+      "file":"bobaadr.csv",
       "table": "dcp_pad_bobaadr"
     }
   ],
