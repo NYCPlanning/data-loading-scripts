@@ -1,0 +1,1 @@
+\COPY dcp_pad_bobaadr FROM './temp/dcp_pad/bobaadr.csv' CSV HEADER;
