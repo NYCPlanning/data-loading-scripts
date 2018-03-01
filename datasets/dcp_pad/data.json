@@ -1,14 +1,14 @@
 {
   "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/pad18a.zip",
-  "saveFile": "bobaadr.txt",
+  "saveFile": "pad18a.zip",
   "load": "csv",
   "loadFiles": [
     {
-      "file":"bobaadr.txt",
+      "file":"pad18a/bobaadr.txt",
       "table": "dcp_pad_bobaadr"
     },
     {
-      "file":"bobaadr.csv",
+      "file":"pad18a/bobaadr.csv",
       "table": "dcp_pad_bobaadr"
     }
   ],
