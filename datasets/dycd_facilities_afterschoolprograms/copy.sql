@@ -1,0 +1,1 @@
+\COPY dycd_facilities_afterschoolprograms FROM './temp/dycd_facilities_afterschoolprograms/DYCD_after-school_programs.csv' CSV HEADER;

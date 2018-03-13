@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/mbd7-jfnc/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "DYCD_after-school_programs.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"DYCD_after-school_programs.csv",
+      "table": "dycd_facilities_afterschoolprograms"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
