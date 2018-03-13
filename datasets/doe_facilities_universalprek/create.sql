@@ -18,5 +18,14 @@ CREATE TABLE doe_facilities_universalprek (
   MEALS text,
   INDOOR_OUTDOOR text,
   EXTENDED_DAY text,
-  SEMS_CODE text
+  SEMS_CODE text,
+  Latitude text,
+  Longitude text,
+  Community_Board text,
+  Council_District text,
+  Census_Tract text,
+  BIN text,
+  BBL text,
+  NTA text
 )
+

@@ -27,4 +27,35 @@ CREATE TABLE dcp_pad_bobaadr (
 	segid text,
 	zipcode text,
 	physical_id text
-)
+);
+
+DROP TABLE IF EXISTS dcp_pad_bobabbl;
+CREATE TABLE dcp_pad_bobabbl (
+	loboro text,
+	loblock text,
+	lolot text,
+	lobblscc text,
+	hiboro text,
+	hiblock text,
+	hilot text,
+	hibblscc text,
+	boro text,
+	block text,
+	lot text,
+	bblscc text,
+	billboro text,
+	billblock text,
+	billlot text,
+	billbblscc text,
+	condoflag text,
+	condonum text,
+	coopnum text,
+	numbf text,
+	numaddr text,
+	vacant text,
+	interior text
+);
+
+
+
+
