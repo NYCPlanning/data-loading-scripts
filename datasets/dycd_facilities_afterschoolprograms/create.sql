@@ -2,7 +2,8 @@
 DROP TABLE IF EXISTS dycd_facilities_afterschoolprograms;
 CREATE TABLE dycd_facilities_afterschoolprograms (
 	PROGRAM_TYPE text,	
-	PROGRAM_SITE_NAME text,
+	PROGRAM text,
+	SITE_NAME text,
 	BOROUGH_COMMUNITY text,
 	AGENCY text,
 	Contact_Number text,	
