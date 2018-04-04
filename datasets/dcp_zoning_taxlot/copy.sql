@@ -1,0 +1,1 @@
+\COPY dcp_zoning_taxlot FROM './temp/dcp_zoning_taxlot/NY_ZoningTaxLotDB201803.csv' CSV HEADER;
