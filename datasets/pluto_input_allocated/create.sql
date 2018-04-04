@@ -55,5 +55,6 @@ CREATE TABLE pluto_input_allocated (
 	AP_BORO text,
 	AP_BLOCK text,
 	AP_LOT text,
-	AP_DATE text
+	AP_DATE text,
+	blank text
   )
