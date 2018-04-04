@@ -1,0 +1,1 @@
+\COPY pluto_input_geocodes FROM './temp/pluto_input_geocodes/pluto_input_geocodes.csv' CSV HEADER;
