@@ -1,6 +1,6 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS facdb_datasources;
-CREATE TABLE facdb_datasources (
+DROP TABLE IF EXISTS pluto_input_allocated;
+CREATE TABLE pluto_input_allocated (
 	BORO text,
 	BLOCK text,
 	LOT text,
