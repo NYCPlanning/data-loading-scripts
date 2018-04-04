@@ -1,6 +1,6 @@
 {
   "url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyczoningtaxlotdb201803.zip",
-  "saveFile": "NY_ZoningTaxLotDB201803.csv",
+  "saveFile": "nyczoningtaxlotdb201803.zip",
   "load": "csv",
   "loadFiles": [
     {
