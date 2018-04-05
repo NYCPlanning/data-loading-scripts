@@ -1,0 +1,15 @@
+{
+  "url": "https://raw.githubusercontent.com/NYCPlanning/db-pluto/master/pluto_build/data/pluto_input_tc234.csv",
+  "saveFile": "pluto_input_tc234.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"pluto_input_tc234.csv",
+      "table": "pluto_input_tc234"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

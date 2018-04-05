@@ -1,0 +1,1 @@
+\COPY pluto_input_tc234 FROM './temp/pluto_input_tc234/pluto_input_tc234.csv' CSV HEADER;
