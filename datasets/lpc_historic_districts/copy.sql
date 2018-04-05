@@ -1,0 +1,1 @@
+\COPY lpc_historic_districts FROM './temp/lpc_historic_districts/lpc_historic_districts.csv' CSV HEADER;

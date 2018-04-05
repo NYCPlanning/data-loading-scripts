@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/rb9s-d3m8/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "lpc_landmarks.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"lpc_landmarks.csv",
+      "table": "lpc_landmarks"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

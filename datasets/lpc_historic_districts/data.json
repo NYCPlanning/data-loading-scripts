@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/x3ar-yjn2/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "lpc_historic_districts.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"lpc_historic_districts.csv",
+      "table": "lpc_historic_districts"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
