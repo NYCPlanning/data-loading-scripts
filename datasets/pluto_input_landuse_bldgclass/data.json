@@ -1,0 +1,15 @@
+{
+  "url": "https://raw.githubusercontent.com/NYCPlanning/db-pluto/master/pluto_build/data/pluto_input_landuse_bldgclass.csv",
+  "saveFile": "pluto_input_landuse_bldgclass.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"pluto_input_landuse_bldgclass.csv",
+      "table": "pluto_input_landuse_bldgclass"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

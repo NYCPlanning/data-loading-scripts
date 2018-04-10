@@ -1,0 +1,1 @@
+\COPY pluto_input_landuse_bldgclass FROM './temp/pluto_input_landuse_bldgclass/pluto_input_landuse_bldgclass.csv' CSV HEADER;

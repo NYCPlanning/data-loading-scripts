@@ -1,1 +1,1 @@
-\COPY facdb_datasources FROM './temp/facdb_datasources/facdb_datasources.csv' CSV HEADER;
+\COPY pluto_input_allocated FROM './temp/pluto_input_allocated/pluto_input_allocated.csv' CSV HEADER;
