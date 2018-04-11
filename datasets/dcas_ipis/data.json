@@ -1,0 +1,14 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/n5mv-nfpy/rows.csv?accessType=DOWNLOAD",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file": "dcas_ipis.csv",
+      "table": "dcas_ipis"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

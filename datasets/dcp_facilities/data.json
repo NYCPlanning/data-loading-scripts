@@ -1,0 +1,15 @@
+{
+  "url": "https://planninglabs.carto.com/api/v2/sql?skipfields=cartodb_id&q=SELECT%20*%20FROM%20facdb_v201803&format=shp&filename=facilities_complete_2018-04-11",
+  
+  "load": "shp2pgsql",
+  "loadFiles": [
+    {
+      "file":"facilities_complete_2018-04-11/facilities_complete_2018-04-11.shp",
+      "table": "dcp_facilities"
+    }
+  ],
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+}
