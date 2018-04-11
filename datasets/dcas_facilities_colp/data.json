@@ -1,10 +1,10 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc-colp-shp-2017.zip?r=1",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc-colp-shp-2017.zip",
   
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"shapefiles/nycCOLPall_201706.shp",
+      "file":"nycCOLPall_201706.shp",
       "table": "dcas_facilities_colp"
     }
   ],
