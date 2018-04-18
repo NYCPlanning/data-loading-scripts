@@ -1,0 +1,15 @@
+{
+  "url": "https://github.com/NYCPlanning/db-pluto/blob/master/pluto_build/data/pluto_input_cama_dof.csv",
+  "saveFile": "pluto_input_cama_dof.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"pluto_input_cama_dof.csv",
+      "table": "pluto_input_cama_dof"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

@@ -1,0 +1,1 @@
+\COPY pluto_input_cama_dof FROM './temp/pluto_input_cama_dof/pluto_input_cama_dof.csv' CSV HEADER;
