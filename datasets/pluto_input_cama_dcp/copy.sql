@@ -1,0 +1,1 @@
+\COPY pluto_input_cama_dcp FROM './temp/pluto_input_cama_dcp/pluto_input_cama_dcp.csv' CSV HEADER;
