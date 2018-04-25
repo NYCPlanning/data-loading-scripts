@@ -1,0 +1,1 @@
+\COPY pluto_input_bsmtcode FROM './temp/pluto_input_bsmtcode/pluto_input_bsmtcode.csv' CSV HEADER;
