@@ -8,7 +8,7 @@
       "table": "mnmappluto"
     },
     {
-      "file": "Bronx/BXMapPLUTO.shp",
+      "file": "Bronx/Bronx17V1.1/BXMapPLUTO.shp",
       "table": "bxmappluto"
     },
     {
@@ -20,7 +20,7 @@
       "table": "qnmappluto"
     },
     {
-      "file": "Staten_Island/SIMapPLUTO.shp",
+      "file": "Staten_Island/StatenIsland17V1.1/SIMapPLUTO.shp",
       "table": "simappluto"
     }
   ],
