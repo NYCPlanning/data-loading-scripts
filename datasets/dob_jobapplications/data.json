@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/ic3t-wcy2/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "dob_jobapplications.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dob_jobapplications.csv",
+      "table": "dob_jobapplications"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

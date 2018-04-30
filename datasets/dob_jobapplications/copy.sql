@@ -1,0 +1,1 @@
+\COPY dob_jobapplications FROM './temp/dob_jobapplications/dob_jobapplications.csv' CSV HEADER;
