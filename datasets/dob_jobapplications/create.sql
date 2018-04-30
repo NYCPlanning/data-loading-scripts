@@ -96,5 +96,5 @@ CREATE TABLE dob_jobapplications (
   councildistrict text,
   censustract text,
   nta text,
-  bin text
+  gisbin text
 );
