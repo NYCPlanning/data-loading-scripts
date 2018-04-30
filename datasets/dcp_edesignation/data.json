@@ -3,7 +3,7 @@
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"nyedes_20180321shp.shp",
+      "file":"nyedes_20180321.shp",
       "table": "dcp_edesignation"
     }
   ], 
