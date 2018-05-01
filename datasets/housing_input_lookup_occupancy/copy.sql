@@ -1,0 +1,1 @@
+\COPY housing_input_lookup_occupancy FROM './temp/housing_input_lookup_occupancy/housing_input_lookup_occupancy.csv' CSV HEADER;

@@ -1,0 +1,15 @@
+{
+  "url": "https://raw.githubusercontent.com/NYCPlanning/db-housing/master/housing_build/data/housing_input_lookup_occupancy.csv",
+  "saveFile": "housing_input_lookup_occupancy.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"housing_input_lookup_occupancy.csv",
+      "table": "housing_input_lookup_occupancy"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
