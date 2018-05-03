@@ -1,0 +1,1 @@
+\COPY dob_cofos FROM './temp/dob_cofos/dob_cofos.csv' CSV HEADER;

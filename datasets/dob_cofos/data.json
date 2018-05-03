@@ -1,0 +1,15 @@
+{
+  "url": "https://raw.githubusercontent.com/NYCPlanning/db-housing/master/housing_build/data/dob_cofos.csv",
+  "saveFile": "dob_cofos.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dob_cofos.csv",
+      "table": "dob_cofos"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
