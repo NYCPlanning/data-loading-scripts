@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/ipu4-2q9a/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "dob_permitissuance.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dob_permitissuance.csv",
+      "table": "dob_permitissuance"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
