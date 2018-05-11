@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/ProjectStreets16.geojson",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/ProjectStreets.geojson",
   "load": "org2ogr",
   "loadFiles": [
     {
@@ -7,7 +7,7 @@
       "table": "dot_projects_streets"
     }
   ],
-  "saveFile":"ProjectStreets16.geojson",
+  "saveFile":"ProjectStreets.geojson",
   "ogr2ogr": [ 
         ] 
 }
