@@ -12,16 +12,3 @@
    "-s 2263:4326"
  ] 
 }
-// {
-//   "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/ddc/ddc_CapitalProjects_InfrastractureProjects.geojson",
-//   "load": "org2ogr",
-//   "loadFiles": [
-//     {
-//       "file":"ddc_CapitalProjects_InfrastractureProjects.geojson",
-//       "table": "ddc_capitalprojects_infrastructure"
-//     }
-//   ],
-//   "saveFile":"ddc_CapitalProjects_InfrastractureProjects.geojson",
-//   "ogr2ogr": [ 
-//         ] 
-// }
