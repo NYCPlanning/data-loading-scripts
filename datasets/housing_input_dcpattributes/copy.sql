@@ -1,0 +1,1 @@
+\COPY housing_input_dcpattributes FROM './temp/housing_input_dcpattributes/housing_input_dcpattributes.csv' CSV HEADER;
