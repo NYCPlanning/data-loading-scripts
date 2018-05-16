@@ -3,11 +3,11 @@
   "load": "org2ogr",
   "loadFiles": [
     {
-      "file":"dcp_school_districts.json",
+      "file":"dcp_school_districts.geojson",
       "table": "dcp_school_districts"
     }
   ],
-  "saveFile":"dcp_school_districts.json",
+  "saveFile":"dcp_school_districts.geojson",
   "ogr2ogr": [ 
         ] 
 }
