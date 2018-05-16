@@ -1,13 +1,15 @@
 {
-  "url": "https://data.cityofnewyork.us/api/geospatial/r8nu-ymqj?method=export&format=GeoJSON",
-  "load": "org2ogr",
+  "url": "hhttps://data.cityofnewyork.us/api/geospatial/r8nu-ymqj?method=export&format=Shapefile",
+  "saveFile": "dcp_school_districts.zip",
+  "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"dcp_school_districts.geojson",
+      "file":"geo_export_c36f47da-a57e-4040-a127-8fa05960e51e.shp",
       "table": "dcp_school_districts"
     }
   ],
-  "saveFile":"dcp_school_districts.geojson",
-  "ogr2ogr": [ 
-        ] 
+  "shp2pgsql": [
+    "-d",
+    "-s 2263:4326"
+  ]
 }
