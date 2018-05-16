@@ -1,5 +1,5 @@
 {
-  "url": "hhttps://data.cityofnewyork.us/api/geospatial/r8nu-ymqj?method=export&format=Shapefile",
+  "url": "https://data.cityofnewyork.us/api/geospatial/r8nu-ymqj?method=export&format=Shapefile",
   "saveFile": "dcp_school_districts.zip",
   "load": "shp2pgsql",
   "loadFiles": [
