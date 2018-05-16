@@ -7,9 +7,20 @@ CREATE TABLE housing_input_dcpattributes (
 	units_prop text,
 	units_prop_res text,
 	units_prop_hotel text,
+	u_prop text,
+	u_net_comp text,
+	u_net_inc text,
+	c_u_latest text,
+	u_2013_inc text,
+	u_2015_inc text,
+	u_2016_inc text,
+	u_2017_inc text,
+	u_2015_net  text
+	,u_2016_net text,
+	u_2017_net text,
 	bbl text,
 	bin text,
 	latitude text,
 	longitude text,
-	geom text
+	geom geometry
 );
