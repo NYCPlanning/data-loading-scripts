@@ -1,6 +1,6 @@
 -- create table to load csv from the nyc open data portal
 DROP TABLE IF EXISTS dcp_zoning_res6to10;
-CREATE TABLE dcp_zoning_res6to10 
+CREATE TABLE dcp_zoning_res6to10 (
 	ZoningDistrict text,
 	ZoningDistricttype text,
 	LotAreamin text,
