@@ -1,0 +1,1 @@
+\COPY dcp_zoning_res6to10 FROM './temp/dcp_zoning_res6to10/dcp_zoning_res6to10.csv' CSV HEADER;

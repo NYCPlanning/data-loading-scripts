@@ -1,0 +1,15 @@
+{
+  "url": "https://raw.githubusercontent.com/NYCPlanning/db-pluto/master/pluto_build/data/dcp_zoning_res6to10.csv",
+  "saveFile": "dcp_zoning_res6to10.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dcp_zoning_res6to10.csv",
+      "table": "dcp_zoning_res6to10"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
