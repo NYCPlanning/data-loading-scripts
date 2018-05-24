@@ -13,15 +13,15 @@ os.chdir(wd[:-1]) #-1 removes \n
 with open('./temp/dcp_metadata/mappluto_meta.xml') as fd:
     doc = xmltodict.parse(fd.read())
 
-num_proj = len(doc['root']['metadata'])
+num_proj = len(doc['metadata']['idinfo'])
 
 # loop through projects
 caps = []
 for proj in list(range(num_proj)):
-    proj_id = doc['root']['metadata'][proj]['idinfo']
-    fmsid = doc['root']['metadata'][proj]['refSysInfo']
-    desc =  doc['root']['metadata'][proj]['mdMaint']
-    total_funding =  doc['root']['metadata'][proj]['dqScope']
+    proj_id = doc['metadata']['idinfo'][proj]['citation']
+    fmsid = doc['metadata']['idinfo'][proj]['descript']
+    desc =  doc['metadata']['idinfo'][proj]['timeperd']
+    total_funding =  doc['metadata']['idinfo'][proj]['status']
     lonlats = []
     park_ids = []
     park_ids.append(park_id)    
