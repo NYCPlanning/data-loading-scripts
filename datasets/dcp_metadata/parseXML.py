@@ -24,10 +24,8 @@ for proj in list(range(num_proj)):
     total_funding =  doc['root']['metadata'][proj]['dqScope']
     lonlats = []
     park_ids = []
-        park_ids.append(park_id)    
+    park_ids.append(park_id)    
     # parsed data combinations
-    lonlats = shapely.geometry.MultiPoint(lonlats)
-    park_ids = ','.join(p for p in park_ids)
     caps.append([proj_id, fmsid, desc, total_funding, park_ids, lonlats])
 
 caps_df = gp.GeoDataFrame(caps,
@@ -35,15 +33,10 @@ caps_df = gp.GeoDataFrame(caps,
                                      'fmsid',
                                      'desc',
                                      'total_funding',
-                                     'park_id',
-                                     'geom'],
-                          crs = {'init':'epsg:4326'},
-                          geometry = 'geom'
+                                     'park_id'],
+                          crs = {'init':'epsg:4326'}                          
                           )
 
-# drop null geometries
-caps_df_geo = caps_df[ [i[0].x < -70 for i in caps_df['geom']]]
 
-# write to shapefile
-caps_df_geo.to_file('./temp/dpr_capitalprojects/dpr_capitalprojects_geo.shp', driver = 'ESRI Shapefile')
-caps_df.to_file('./temp/dpr_capitalprojects/dpr_capitalprojects.shp', driver = 'ESRI Shapefile')
+# write to file
+caps_df.to_file('./temp/dcp_metadata/mappluto_meta.csv')
