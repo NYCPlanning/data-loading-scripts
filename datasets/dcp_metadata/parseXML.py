@@ -18,7 +18,7 @@ num_proj = len(doc['metadata']['idinfo'])
 # loop through projects
 caps = []
 for proj in list(range(num_proj)):
-    proj_id = doc['metadata']['idinfo'][proj]['citation']
+    proj_id = doc['metadata']['idinfo'][proj]['title']
     fmsid = doc['metadata']['idinfo'][proj]['descript']
     desc =  doc['metadata']['idinfo'][proj]['timeperd']
     total_funding =  doc['metadata']['idinfo'][proj]['status']
