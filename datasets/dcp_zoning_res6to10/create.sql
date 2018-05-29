@@ -30,5 +30,6 @@ CREATE TABLE dcp_zoning_res6to10 (
 	WideStreetMIHFARmax text,
 	WideStreetMIHBaseHeightrangeQGF text,
 	WideStreetMIHBuildingHeightmaxQGF text,
-	WideStreetMIHNumStoriesmaxQGF text
+	WideStreetMIHNumStoriesmaxQGF text,
+	commfacfar text
 );
