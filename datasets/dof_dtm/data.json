@@ -1,0 +1,14 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/smk3-tmxj/files/e1a29f93-32fd-46be-b6e6-a10d45e121d9?filename=Digital_Tax_Map_20180525.zip",
+  "load": "shp2pgsql",
+  "loadFiles":[
+    {
+      "file":"DTM_Tax_Lot_Polygon.shp",
+      "table": "dof_dtm"
+    }
+  ], 
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+}
