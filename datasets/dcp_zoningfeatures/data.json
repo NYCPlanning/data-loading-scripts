@@ -1,0 +1,34 @@
+{
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nycgiszoningfeatures_201805shp.zip",
+  "load": "shp2pgsql",
+  "loadFiles": [
+    {
+      "file": "nyzd.shp",
+      "table": "dcp_zoningdistricts"
+    },
+    {
+      "file": "nyco.shp",
+      "table": "dcp_commercialoverlay"
+    },
+    {
+      "file": "nysp.shp",
+      "table": "dcp_specialpurpose"
+    },
+    {
+      "file": "nylh.shp",
+      "table": "dcp_limitedheight"
+    },
+    {
+      "file": "nysp_sd.shp",
+      "table": "dcp_specialpurposesubdistricts"
+    },
+    {
+      "file": "nyzma.shp",
+      "table": "dcp_zoningmapamendments"
+    }
+  ],
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+}
