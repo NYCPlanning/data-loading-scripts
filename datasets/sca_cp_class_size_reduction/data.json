@@ -1,0 +1,18 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/mpg8-b8s5/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "sca_cp_class_size_reduction.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"sca_cp_class_size_reduction.csv",
+      "table": "sca_cp_class_size_reduction"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
+
+
+

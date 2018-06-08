@@ -1,0 +1,1 @@
+\COPY sca_cp_prek_location FROM './temp/sca_cp_prek_location/sca_cp_prek_location.csv' CSV HEADER;

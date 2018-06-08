@@ -1,0 +1,18 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/nfz9-tzba/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "sca_cp_prek_schools.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"sca_cp_prek_schools.csv",
+      "table": "sca_cp_prek_schools"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
+
+
+
