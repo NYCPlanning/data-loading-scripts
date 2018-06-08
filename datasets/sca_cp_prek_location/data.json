@@ -1,0 +1,18 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/4zdr-zwdi/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "sca_cp_prek_location.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"sca_cp_prek_location.csv",
+      "table": "sca_cp_prek_location"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
+
+
+

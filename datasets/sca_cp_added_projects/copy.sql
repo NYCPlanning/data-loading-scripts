@@ -1,0 +1,1 @@
+\COPY sca_cp_added_projects FROM './temp/sca_cp_added_projects/sca_cp_added_projects.csv' CSV HEADER;

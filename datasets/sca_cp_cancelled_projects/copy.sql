@@ -1,0 +1,1 @@
+\COPY sca_cp_cancelled_projects FROM './temp/sca_cp_cancelled_projects/sca_cp_cancelled_projects.csv' CSV HEADER;

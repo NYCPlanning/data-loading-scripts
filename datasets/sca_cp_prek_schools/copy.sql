@@ -1,0 +1,1 @@
+\COPY sca_cp_prek_schools FROM './temp/sca_cp_prek_schools/sca_cp_prek_schools.csv' CSV HEADER;
