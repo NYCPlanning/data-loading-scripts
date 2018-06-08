@@ -1,0 +1,1 @@
+\COPY sca_cp_programs FROM './temp/sca_cp_programs/sca_cp_programs.csv' CSV HEADER;
