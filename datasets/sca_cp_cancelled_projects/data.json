@@ -1,0 +1,18 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/cwqt-nvfg/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "sca_cp_cancelled_projects.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"sca_cp_cancelled_projects.csv",
+      "table": "sca_cp_cancelled_projects"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
+
+
+

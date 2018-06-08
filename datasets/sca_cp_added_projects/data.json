@@ -1,0 +1,18 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/7xjx-2mhj/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "sca_cp_added_projects.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"sca_cp_added_projects.csv",
+      "table": "sca_cp_added_projects"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
+
+
+
