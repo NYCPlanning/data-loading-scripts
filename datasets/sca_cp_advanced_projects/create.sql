@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS sca_cp_advanced_projectss;
 CREATE TABLE sca_cp_advanced_projects (
 	
 	District text,
-	Building]ID text,
+	BuildingID text,
 	School text,
 	Boro text,
 	ProgramCategory text
