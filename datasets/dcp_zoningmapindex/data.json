@@ -1,9 +1,9 @@
 {
- "url": "https://data.cityofnewyork.us/api/geospatial/58k2-kgtb?method=export&format=Shapefile",
+ "url": "https://data.cityofnewyork.us/api/geospatial/58k2-kgtb?method=export&format=Original",
  "load": "shp2pgsql",
  "loadFiles": [
   {
-    "file": "geo_export_93868967-7128-4cec-98b7-93a4281ab996.shp",
+    "file": "Quartersection_ZoningMapIndex.shp",
     "table": "dcp_zoningmapindex"
   } 
  ], 
