@@ -1,19 +1,19 @@
 -- create table to load csv from the nyc open data portal
 DROP TABLE IF EXISTS sca_cp_rep_schools;
 CREATE TABLE sca_cp_rep_schools (
-	Existing Site Identified text, 
-	Proposed Leased Facility text,
+	ExistingSiteIdentified text, 
+	ProposedLeasedFacility text,
 	District text,
 	ProjectNum text,
 	School text,
 	Boro text,
-	Forecast Capacity text,
-	Design Start text, 
-	Constr Start text, 
+	ForecastCapacity text,
+	DesignStart text, 
+	ConstrStart text, 
 	ActualEstCompl text, 
 	TotalEstCost text, 
 	PreviousAppropriations text,
 	FundingReqdFY1519 text,
-	Needed toComplete text
+	NeededtoComplete text
 );
 

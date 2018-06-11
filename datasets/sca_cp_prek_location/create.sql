@@ -8,9 +8,9 @@ CREATE TABLE sca_cp_prek_location (
 	Postcode text,
 	Latitude text,
 	Longitude text,
-	Community Board text,
-	Council District text, 	
-	Census Tract text,	
+	CommunityBoard text,
+	CouncilDistrict text, 	
+	CensusTract text,	
 	BIN	text,
 	BBL	text,
 	NTA text

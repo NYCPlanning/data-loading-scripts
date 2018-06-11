@@ -3,10 +3,10 @@ DROP TABLE IF EXISTS sca_cp_added_projectss;
 CREATE TABLE sca_cp_added_projects (
 	
 	District text,
-	Bldg ID text,
+	BldgID text,
 	School text,
 	Boro text,
-	Program Category text
+	ProgramCategory text
 );
 
 

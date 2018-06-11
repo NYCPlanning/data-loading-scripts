@@ -3,10 +3,10 @@ DROP TABLE IF EXISTS sca_cp_cancelled_projectss;
 CREATE TABLE sca_cp_cancelled_projects (
 	
 	District text,
-	Bld ID text,
+	BldID text,
 	School text,
 	Boro text,
-	Program Category text,
+	ProgramCategory text,
 	Reason text
 );
 
