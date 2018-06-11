@@ -2,7 +2,6 @@
 DROP TABLE IF EXISTS sca_cp_class_size_reduction;
 CREATE TABLE sca_cp_class_size_reduction (
 	ExistingSiteIdentified text, 
-	ProposedLeasedFacility text,
 	District text,
 	ProjectNum text,
 	School text,
