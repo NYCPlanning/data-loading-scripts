@@ -1,0 +1,1 @@
+\COPY dof_condo_units FROM './temp/dof_condo/dof_condo_units.csv' CSV HEADER;

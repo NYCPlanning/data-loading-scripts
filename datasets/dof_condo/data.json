@@ -1,0 +1,15 @@
+{
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dof/condo.csv",
+  "saveFile": "dof_condo.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dof_condo.csv",
+      "table": "dof_condo"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
