@@ -6,6 +6,6 @@ ADD geom geometry;
 
 -- based on PLUTO
 UPDATE doe_facilities_lcgms a
-SET geom=b.geom
+SET geom=ST_Centroid(b.geom)
 FROM dcp_mappluto b
-WHERE a.boroughblocklot = b.bbl::text;
+WHERE a.boroughblocklot = trunc(b.bbl, 0)::text;
