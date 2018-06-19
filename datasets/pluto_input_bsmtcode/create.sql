@@ -3,5 +3,8 @@ DROP TABLE IF EXISTS pluto_input_bsmtcode;
 CREATE TABLE pluto_input_bsmtcode (
 	bsmnt_type text,
 	bsmntgradient text,
-	bsmtcode text
-  )
+	bsmtcode text,
+	bsmnt_typevalue text,
+	bsmntgradientvalue text,
+	bsmtcodevalue text
+);

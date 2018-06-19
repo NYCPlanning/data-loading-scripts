@@ -2,5 +2,6 @@
 DROP TABLE IF EXISTS pluto_input_landuse_bldgclass;
 CREATE TABLE pluto_input_landuse_bldgclass (
 	bldgclass text,
-	landuse text
-  )
+	landuse text,
+	landusevalue text
+ );
