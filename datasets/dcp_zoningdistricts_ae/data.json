@@ -3,7 +3,7 @@
  "load": "shp2pgsql",
  "loadFiles": [
   {
-    "file": "nyzd_6252018.shp",
+    "file": "nyzd_6252018/nyzd_6252018.shp",
     "table": "dcp_zoningdistricts_ae"
   } 
  ], 
