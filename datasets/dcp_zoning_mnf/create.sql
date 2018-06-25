@@ -11,4 +11,4 @@ CREATE TABLE dcp_zoning_mnf (
 	MnfFAR text,
 	commfacfar text,
 	RequiredAccessoryMnfParkingsqft text
-)
+);

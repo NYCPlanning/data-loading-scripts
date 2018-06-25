@@ -1,0 +1,14 @@
+{
+ "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/nyzd_6252018.zip",
+ "load": "shp2pgsql",
+ "loadFiles": [
+  {
+    "file": "nyzd_6252018.shp",
+    "table": "dcp_zoningdistricts_ae"
+  } 
+ ], 
+ "shp2pgsql": [ 
+   "-d",
+   "-s 2263:4326"
+ ] 
+}
