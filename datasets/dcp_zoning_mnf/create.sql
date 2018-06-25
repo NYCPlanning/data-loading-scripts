@@ -9,5 +9,6 @@ CREATE TABLE dcp_zoning_mnf (
 	MnfUG17 text,
 	MnfUG18 text,
 	MnfFAR text,
+	commfacfar text,
 	RequiredAccessoryMnfParkingsqft text
 )
