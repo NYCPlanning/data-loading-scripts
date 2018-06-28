@@ -1,0 +1,15 @@
+{
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/bx_mappluto_18v1.zip",
+  "table": "bxmappluto",
+  "load": "shp2pgsql",
+ "loadFiles": [
+    {
+      "file": "BXMapPLUTO.shp",
+      "table": "bxmappluto"
+    }
+   ],
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+ }
