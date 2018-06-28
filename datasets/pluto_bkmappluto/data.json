@@ -1,6 +1,6 @@
 {
   "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/bk_mappluto_18v1.zip",
-  "table": "dcp_mappluto",
+  "table": "bkmappluto",
   "load": "shp2pgsql",
  "loadFiles": [
     {
