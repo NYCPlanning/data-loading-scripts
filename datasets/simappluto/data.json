@@ -1,0 +1,15 @@
+{
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/si_mappluto_18v1.zip",
+  "table": "simappluto",
+  "load": "shp2pgsql",
+ "loadFiles": [
+    {
+      "file": "SIMapPLUTO.shp",
+      "table": "simappluto"
+    }
+   ],
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+ }

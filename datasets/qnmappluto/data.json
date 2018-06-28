@@ -1,0 +1,15 @@
+{
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/qn_mappluto_18v1.zip",
+  "table": "qnmappluto",
+  "load": "shp2pgsql",
+ "loadFiles": [
+    {
+      "file": "QNMapPLUTO.shp",
+      "table": "qnmappluto"
+    }
+   ],
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+ }
