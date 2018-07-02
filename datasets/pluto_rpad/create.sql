@@ -71,8 +71,7 @@ CREATE TABLE pluto_rpad (
 	HOUSENUM_LO text,
 	HOUSENUM_HI text,
 	STCODE11 text,
-	GEOSUPPORT_RC text,
-	extra text
+	GEOSUPPORT_RC text
 );
 
 
