@@ -1,0 +1,1 @@
+\COPY dof_dtm_changes FROM './temp/dof_dtm_changes/dof_dtm_changes.csv' DELIMITER ',' CSV HEADER;
