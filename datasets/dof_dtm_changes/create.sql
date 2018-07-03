@@ -29,7 +29,5 @@ CREATE TABLE dof_dtm_changes (
 	sub_rights_action text,
 	bnd_line_action text,
 	bnd_line_type text,
-	bnd_line_details text,
-	auth_for_change text,
-	source text
+	bnd_line_details text
  );
