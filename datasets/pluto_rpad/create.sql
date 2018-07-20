@@ -14,6 +14,24 @@ CREATE TABLE pluto_rpad (
 	CURAVT_ACT text,
 	CUREXL_ACT text,
 	CUREXT_ACT text,
+	CHGDT text ,
+	CHAVL text,
+	CHAVT text,
+	CHEXL text,
+	CHEXT text,
+	CHAVL_ACT text,
+	CHAVT_ACT text,
+	CHEXL_ACT text,
+	CHEXT_ACT text,
+	FCHGDT text,
+	FCHAVL text,
+	FCHAVT text,
+	FCHEXL text,
+	FCHEXT text,
+	FCHAVL_ACT text,
+	FCHAVT_ACT text,
+	FCHEXL_ACT text,
+	FCHEXT_ACT text,
 	NEWLOT text,
 	DROPLOT text,
 	NOAV text,
@@ -73,5 +91,3 @@ CREATE TABLE pluto_rpad (
 	STCODE11 text,
 	GEOSUPPORT_RC text
 );
-
-
