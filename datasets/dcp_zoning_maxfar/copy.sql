@@ -1,0 +1,1 @@
+\COPY dcp_zoning_maxfar FROM './temp/dcp_zoning_maxfar/dcp_zoning_maxfar.csv' CSV HEADER;
