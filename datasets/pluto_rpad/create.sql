@@ -88,6 +88,7 @@ CREATE TABLE pluto_rpad (
 	YRALT2_RANGE text,
 	HOUSENUM_LO text,
 	HOUSENUM_HI text,
+	STREETNAME text,
 	STCODE11 text,
 	GEOSUPPORT_RC text
 );
