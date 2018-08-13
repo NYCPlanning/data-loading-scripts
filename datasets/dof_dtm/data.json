@@ -3,7 +3,7 @@
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"DTM_Tax_Lot_Polygon.shp",
+      "file":"Tax_Lot_Polygon.shp",
       "table": "dof_dtm"
     }
   ], 
