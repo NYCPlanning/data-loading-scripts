@@ -1,5 +1,5 @@
 {
-  "url": "https://raw.githubusercontent.com/NYCPlanning/db-pluto/master/pluto_build/data/pluto_input_cama_dof.csv",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dof/pluto_input_cama_dof.csv",
   "saveFile": "pluto_input_cama_dof.csv",
   "load": "csv",
   "loadFiles": [
