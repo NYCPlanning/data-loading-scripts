@@ -1,9 +1,9 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dof/DTM_20180809.zip",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dof/DTM_Tax_Lot_Polygons.zip",
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"DTM_20180809/DTM_20180809.shp",
+      "file":"DTM_Tax_Lot_Polygons.shp",
       "table": "dof_dtm"
     }
   ], 
