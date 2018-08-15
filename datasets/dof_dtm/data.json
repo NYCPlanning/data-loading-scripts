@@ -3,7 +3,7 @@
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"DTM_20180809.shp",
+      "file":"DTM_20180809/DTM_20180809.shp",
       "table": "dof_dtm"
     }
   ], 
