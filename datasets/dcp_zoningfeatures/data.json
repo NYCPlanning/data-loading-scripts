@@ -1,29 +1,29 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nycgiszoningfeatures_201805shp.zip",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/nycgiszoningfeatures_shp.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file": "nycgiszoningfeatures_201805shp/nyzd.shp",
+      "file": "nycgiszoningfeatures_shp/nyzd.shp",
       "table": "dcp_zoningdistricts"
     },
     {
-      "file": "nycgiszoningfeatures_201805shp/nyco.shp",
+      "file": "nycgiszoningfeatures_shp/nyco.shp",
       "table": "dcp_commercialoverlay"
     },
     {
-      "file": "nycgiszoningfeatures_201805shp/nysp.shp",
+      "file": "nycgiszoningfeatures_shp/nysp.shp",
       "table": "dcp_specialpurpose"
     },
     {
-      "file": "nycgiszoningfeatures_201805shp/nylh.shp",
+      "file": "nycgiszoningfeatures_shp/nylh.shp",
       "table": "dcp_limitedheight"
     },
     {
-      "file": "nycgiszoningfeatures_201805shp/nysp_sd.shp",
+      "file": "nycgiszoningfeatures_shp/nysp_sd.shp",
       "table": "dcp_specialpurposesubdistricts"
     },
     {
-      "file": "nycgiszoningfeatures_201805shp/nyzma.shp",
+      "file": "nycgiszoningfeatures_shp/nyzma.shp",
       "table": "dcp_zoningmapamendments"
     }
   ],
