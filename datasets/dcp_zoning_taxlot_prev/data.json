@@ -1,0 +1,15 @@
+{
+  "url": "https://raw.githubusercontent.com/NYCPlanning/db-zoningtaxlots/d57f5e7a76d5b188947ed369c51f54a4c86b3059/zoningtaxlots_build/output/zoningtaxlot_db.csv",
+  "saveFile": "dcp_zoning_taxlot_prev.zip",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dcp_zoning_taxlot_prev.csv",
+      "table": "dcp_zoning_taxlot_prev"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

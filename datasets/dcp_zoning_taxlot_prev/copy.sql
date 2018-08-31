@@ -1,0 +1,1 @@
+\COPY dcp_zoning_taxlot_prev FROM './temp/dcp_zoning_taxlot_prev/dcp_zoning_taxlot_prev.csv' CSV HEADER;
