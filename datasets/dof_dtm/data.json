@@ -3,8 +3,8 @@
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"DTM_Tax_Lot_Polygons.shp",
-      "table": "dof_dtm"
+      "file":"Tax_Lot_Polygon_20180405.shp",
+      "table": "dof_dtm_180405"
     }
   ], 
   "shp2pgsql": [ 
