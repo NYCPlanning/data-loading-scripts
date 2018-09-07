@@ -1,0 +1,30 @@
+{
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_18v1.zip",
+  "load": "csv",
+  "loadFiles": [
+     {
+      "file": "MN_18V1.csv",
+      "table": "mnpluto"
+    },
+    {
+      "file": "BX_18V1.csv",
+      "table": "bxpluto"
+    },
+    {
+      "file": "BK_18V1.csv",
+      "table": "bkpluto"
+    },
+    {
+      "file": "QN_18V1.csv",
+      "table": "qnpluto"
+    },
+    {
+      "file": "SI_18V1.csv",
+      "table": "sipluto"
+ }
+   ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
