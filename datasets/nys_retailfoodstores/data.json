@@ -1,0 +1,15 @@
+{
+  "url": "https://data.ny.gov/api/views/9a8c-vfzj/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "Retail_Food_Stores.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"Retail_Food_Stores.csv",
+      "table": "nys_retailfoodstores"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
