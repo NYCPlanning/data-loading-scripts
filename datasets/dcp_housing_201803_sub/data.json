@@ -1,0 +1,15 @@
+{
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/dobdev_jobs_20180316_0921.zip",
+  "saveFile": "dobdev_jobs_20180316_sub.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dobdev_jobs_20180316_sub.csv",
+      "table": "dobdev_jobs_20180316_sub"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
