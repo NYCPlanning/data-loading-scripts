@@ -1,5 +1,5 @@
 {
-  "url": "https://raw.githubusercontent.com/NYCPlanning/db-pluto/master/pluto_build/data/pluto_input_geocodes.csv",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/pluto_input_geocodes.csv",
   "saveFile": "pluto_input_geocodes.csv",
   "load": "csv",
   "loadFiles": [
