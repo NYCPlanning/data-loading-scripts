@@ -1,6 +1,7 @@
 -- create table to load csv from the nyc open data portal
 DROP TABLE IF EXISTS dof_condo;
 CREATE TABLE dof_condo (
+	OBJECTID text,
 	CONDO_BORO text,
 	CONDO_KEY text,
 	CONDO_NAME text,
@@ -15,5 +16,6 @@ CREATE TABLE dof_condo (
 	LAST_MOD_1 text,
 	AV_CHANGE text,
 	BW_CHANGE text,
+	GLOBALID text,
 	CONDO_NUMB text
  );
