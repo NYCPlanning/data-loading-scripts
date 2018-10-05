@@ -8,8 +8,8 @@
       "table": "sbs_facilities_workforce1"
     }
   ],
-  "csv": [ 
+  "csv": [
     "create",
     "copy"
-  ] 
+  ]
 }

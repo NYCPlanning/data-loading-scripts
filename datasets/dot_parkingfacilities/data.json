@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/5bhr-pjxt/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "dot_parkingfacilities.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dot_parkingfacilities.csv",
+      "table": "dot_parkingfacilities"
+    }
+  ],
+  "csv": [
+    "create",
+    "copy"
+  ]
+}

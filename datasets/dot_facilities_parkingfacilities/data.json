@@ -8,8 +8,8 @@
     }
   ],
   "saveFile":"dot_facilities_ParkingFacilities.zip",
-  "shp2pgsql": [ 
+  "shp2pgsql": [
     "-d",
     "-s 4326:4326"
-  ] 
+  ]
 }

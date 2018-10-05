@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/b2sp-asbg/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "hra_centers.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"hra_centers.csv",
+      "table": "hra_centers"
+    }
+  ],
+  "csv": [
+    "create",
+    "copy"
+  ]
+}
