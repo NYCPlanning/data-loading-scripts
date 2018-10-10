@@ -18,17 +18,5 @@ CREATE TABLE pluto_input_geocodes (
 	sanitationDistrict text,
 	sanitationCollectionScheduling text,
 	boePreferredStreetName text,
-	numberOfExistingStructures text,
-	empty1 text,
-	empty2 text,
-	empty3 text,
-	empty4 text,
-	empty5 text,
-	empty6 text,
-	empty7 text,
-	empty8 text,
-	empty9 text,
-	empty10 text,
-	empty11 text,
-	empty12 text
+	numberOfExistingStructures text
  );

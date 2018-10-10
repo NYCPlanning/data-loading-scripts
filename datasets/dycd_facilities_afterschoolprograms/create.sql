@@ -18,5 +18,4 @@ CREATE TABLE dycd_facilities_afterschoolprograms (
 	BIN text,
 	BBL text,
 	NTA text
-)
-
+);

@@ -2,9 +2,9 @@
 DROP TABLE IF EXISTS hra_centers;
 CREATE TABLE hra_centers (
 Borough text,
-Center_Name text,
-Center_Address text,
-Zip_Code text,
+CenterName text,
+CenterAddress text,
+ZipCode text,
 Telephone text,
 Latitude double precision,
 Longitude double precision,
@@ -15,4 +15,4 @@ BIN INT,
 BBL INT,
 NTA text,
 Borough text
-)
+);
