@@ -1,9 +1,9 @@
 {
-  "url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyct2010wi_16d.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyct2010wi_18c.zip",
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"nyct2010wi_16d/nyct2010wi.shp",
+      "file":"nyct2010wi_18c/nyct2010wi.shp",
       "table": "dcp_censustracts"
     }
   ], 

@@ -1,10 +1,10 @@
 {
-  "url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nynta16b.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nynta_18c.zip",
   
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nynta_16b/nynta.shp",
+      "file":"nynta_18c/nynta.shp",
       "table": "dcp_ntaboundaries"
     }
   ],
