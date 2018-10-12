@@ -1,10 +1,10 @@
 {
- "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dsny/DSNY_select_facs_07262016.zip",
+ "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dsny/DSNY_Selected_Facilities.zip",
  "saveFile": "dsny_facilities_mtsgaragemaintenance.zip",
  "load": "shp2pgsql",
  "loadFiles": [
   {
-    "file": "DSNY_select_facs_07262016.shp",
+    "file": "DSNY_Selected_Facilities.shp",
     "table": "dsny_facilities_mtsgaragemaintenance"
   } 
  ], 
