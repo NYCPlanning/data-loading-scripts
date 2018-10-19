@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/POPS_Addresses_through_2017_10_23.csv",
+  "url": "https://planninglabs.carto.com/api/v2/sql?filename=pops_v201808&q=SELECT+*+FROM+(select+*+from+planninglabs.pops_v201808)+as+subq+&format=csv&bounds=&api_key=&skipfields=the_geom_webmercator",
   "saveFile": "dcp_pops.csv",
   "load": "csv",
   "loadFiles": [
@@ -8,8 +8,8 @@
       "table": "dcp_pops"
     }
   ],
-  "csv": [ 
+  "csv": [
     "create",
     "copy"
-  ] 
+  ]
 }
