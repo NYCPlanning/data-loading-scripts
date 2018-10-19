@@ -22,5 +22,6 @@ CREATE TABLE housing_input_dcpattributes (
 	bin text,
 	latitude text,
 	longitude text,
-	geom geometry
+	geom geometry,
+	newcolumn text
 );
