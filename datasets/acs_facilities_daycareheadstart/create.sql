@@ -1,8 +1,7 @@
 -- create table to load csv from the nyc open data portal
 DROP TABLE IF EXISTS acs_facilities_daycareheadstart;
 CREATE TABLE acs_facilities_daycareheadstart (
-	Center text,
-	Name text,
+	CenterName text,
 	LegalName text,
 	Building text,
 	Street text,
@@ -12,8 +11,7 @@ CREATE TABLE acs_facilities_daycareheadstart (
 	PermitNumber text,
 	PermitExpiration text,
 	Status text,
-	Age text,
-	Range text,
+	AgeRange text,
 	MaximumCapacity text,
 	DayCareID text,
 	ProgramType text,
