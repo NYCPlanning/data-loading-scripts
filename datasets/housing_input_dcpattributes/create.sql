@@ -5,6 +5,7 @@ CREATE TABLE housing_input_dcpattributes (
 	prop_stories text,
 	occ_init text,
 	dcp_occ_pr text,
+	dcp_occ_category text,
 	units_init text,
 	units_prop text,
 	units_prop_res text,
