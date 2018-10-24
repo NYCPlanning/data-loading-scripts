@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS hra_centers;
+DROP TABLE IF EXISTS hra_centers CASCADE;
 CREATE TABLE hra_centers (
 Borough text,
 CenterName text,
@@ -14,5 +14,5 @@ Census_Tract INT,
 BIN INT,
 BBL INT,
 NTA text,
-Borough text
+Borough1 text
 );
