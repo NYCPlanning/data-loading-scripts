@@ -3,8 +3,9 @@ DROP TABLE IF EXISTS nysed_facilities_activeinstitutions;
 CREATE TABLE nysed_facilities_activeinstitutions (
 	Institution_Id double precision,
 	Legal_Name text,
-	Sed_Code double precision,
 	Popular_Name text,
+	Sed_Code double precision,
+	Popular_Name2 text,
 	Active_Date text,
 	Institution_Type_Code text,
 	Institution_Type_Desc text,
@@ -22,7 +23,5 @@ CREATE TABLE nysed_facilities_activeinstitutions (
 	City text,
 	State text,
 	Zipcd5 text,
-	Physical_Addr_Modified_Date text,
-	Institution_Phone text,
-	Institution_Url text
-  )
+	Zipcd4
+);

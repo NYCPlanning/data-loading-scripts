@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS nysed_nonpublicenrollment;
+DROP TABLE IF EXISTS nysed_nonpublicenrollment CASCADE;
 CREATE TABLE nysed_nonpublicenrollment (
 	County text,
 	BEDS_Code text,
