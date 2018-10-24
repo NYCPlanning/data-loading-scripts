@@ -1,9 +1,11 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS dca_facilities_operatingbusinesses;
+DROP TABLE IF EXISTS dca_facilities_operatingbusinesses CASCADE;
 CREATE TABLE dca_facilities_operatingbusinesses (
 	DCA_License_Number text,
 	License_Type text,
 	License_Expiration_Date text,
+	LicenseStatus text,
+	LicenseCreationDate text,
 	License_Category text,
 	Business_Name text,
 	Business_Name_2 text,
@@ -15,7 +17,15 @@ CREATE TABLE dca_facilities_operatingbusinesses (
 	Address_ZIP text,
 	Contact_Phone_Number text,
 	Address_Borough text,
+	BoroughCode text,
+	CommunityBoard text,
+	CouncilDistrict text,
+	BIN text,
+	BBL text,
+	NTA text,
+	CensusTract text,
 	Detail text,
 	Longitude numeric,
-	Latitude numeric
-)
+	Latitude numeric,
+	Location text
+);
