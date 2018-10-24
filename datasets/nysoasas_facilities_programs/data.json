@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/nysoasas/NYC%20Data%20Request%20for%20Programs%205-8-2017.csv",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/nysoasas/Treatment_Providers_OASAS_Directory_Search_24-Oct-18.csv",
   "saveFile": "nysoasas_facilities_programs.csv",
   "load": "csv",
   "loadFiles": [
