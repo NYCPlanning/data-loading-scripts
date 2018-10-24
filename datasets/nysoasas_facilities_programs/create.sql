@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS nysoasas_facilities_programs;
+DROP TABLE IF EXISTS nysoasas_facilities_programs CASCADE;
 CREATE TABLE nysoasas_facilities_programs (
 	Provider_Name text,
 	Provider_Number text,
@@ -21,6 +21,7 @@ CREATE TABLE nysoasas_facilities_programs (
 	Contact_Email text,
 	Contact_Phone text,
 	Contact_Phone_Extension text,
+	PROGRAM_TYPE text,
 	Service text,
 	ADMISSION_PHONE text,
 	ADMISSION_PHONE_EXT text,
@@ -29,4 +30,4 @@ CREATE TABLE nysoasas_facilities_programs (
 	ADDITIONAL_LOCATION_CITY text,
 	ADDITIONAL_LOCATION_ZIP text,
 	ADDITIONAL_LOCATION_COUNTYNAME text
-  );
+):
