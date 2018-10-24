@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS doe_facilities_schoolsbluebook;
+DROP TABLE IF EXISTS doe_facilities_schoolsbluebook CASCADE;
 CREATE TABLE doe_facilities_schoolsbluebook (
 	Geo_Dist text,
 	Org_ID text,
@@ -11,7 +11,7 @@ CREATE TABLE doe_facilities_schoolsbluebook (
 	Subdistrict_name text,
 	Incl_Class text,
 	Bldg_Name text,
-	Org_Enroll double precision,
+	Org_Enroll text,
 	Org_Target_Cap double precision,
 	Org_Target_Util double precision,
 	PreK_Cap double precision,
