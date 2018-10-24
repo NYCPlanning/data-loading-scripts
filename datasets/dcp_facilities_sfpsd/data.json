@@ -1,5 +1,5 @@
 {
-  "url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_facilities2015_shp.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_facilities2015_shp.zip",
   "saveFile":"dcp_facilities_sfpsd.zip",
   "load": "shp2pgsql",
   "loadFiles": [
