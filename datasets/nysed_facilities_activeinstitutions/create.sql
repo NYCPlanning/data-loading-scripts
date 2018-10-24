@@ -23,5 +23,5 @@ CREATE TABLE nysed_facilities_activeinstitutions (
 	City text,
 	State text,
 	Zipcd5 text,
-	Zipcd4
+	Zipcd4 text
 );
