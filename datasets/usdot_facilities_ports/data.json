@@ -1,5 +1,5 @@
 {
-  "url": "http://osav-usdot.opendata.arcgis.com/datasets/490e1e06b54b4a5bb1e58523a5d546a7_0.zip",
+  "url": "http://osav-usdot.opendata.arcgis.com/datasets/490e1e06b54b4a5bb1e58523a5d546a7_0.zip?where=STATE_POST%20like%20%27%25NY%25%27&inSR=102100&geometry=%7B%22xmin%22%3A-8326744.11327174%2C%22ymin%22%3A4926697.376010074%2C%22xmax%22%3A-8162863.12462826%2C%22ymax%22%3A5040894.296268172%2C%22spatialReference%22%3A%7B%22wkid%22%3A102100%7D%7D",
   "saveFile": "usdot_facilities_ports.zip",
   "load": "shp2pgsql",
   "loadFiles": [
