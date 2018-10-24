@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"airports.shp",
+      "file":"Airports.shp",
       "table": "usdot_facilities_airports"
     }
   ],
