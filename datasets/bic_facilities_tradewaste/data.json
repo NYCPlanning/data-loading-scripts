@@ -1,5 +1,5 @@
 {
-  "url": "https://data.cityofnewyork.us/api/views/7atx-5a3s/rows.csv?accessType=DOWNLOAD",
+  "url": "https://data.cityofnewyork.us/api/views/867j-5pgi/rows.csv?accessType=DOWNLOAD",
   "saveFile": "bic_facilities_tradewaste.csv",
   "load": "csv",
   "loadFiles": [

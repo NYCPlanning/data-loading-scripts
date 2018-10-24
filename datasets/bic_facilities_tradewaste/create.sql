@@ -1,14 +1,21 @@
 -- create table to load csv from the nyc open data portal
 DROP TABLE IF EXISTS bic_facilities_tradewaste;
 CREATE TABLE bic_facilities_tradewaste (
-  TYPE text,
+  CREATED text,
+  BICNUMBER text,
   BUS_NAME text,
+  TRADENAME text,
   MAILING_OFFICE text,
   MAIL_CITY text,
-  MSTAT text,
+  STATE text,
   Postcode text,
   COMP_PHONE text,
-  Borough text,
+  EMAIL text,
+  TYPE text,
+  DISPOSITIONDATE text,
+  EFFECTIVEDATE text,
+  EXPIRATIONDATE text,
+  EXPORTDATE text,
   Latitude text,
   Longitude text,
   Community_Board text,
@@ -17,5 +24,5 @@ CREATE TABLE bic_facilities_tradewaste (
   BIN text,
   BBL text,
   NTA text,
-  Location_1 text
-)
+  Borough text,
+);
