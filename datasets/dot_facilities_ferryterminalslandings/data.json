@@ -1,9 +1,9 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/dot_facilities_FerryTerminalsLandings.zip",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/20181019_Ferry_Terminals_updated_DCP.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"Ferry_Terminals_Landings/Ferry_Terminals_Landings.shp",
+      "file":"Ferry_Terminals_updated_DCP",
       "table": "dot_facilities_ferryterminalslandings"
     }
   ],
