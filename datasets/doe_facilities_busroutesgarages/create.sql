@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS doe_facilities_busroutesgarages;
+DROP TABLE IF EXISTS doe_facilities_busroutesgarages CASCADE;
 CREATE TABLE doe_facilities_busroutesgarages (
 	School_Year text,
 	Route_Number text,
@@ -15,4 +15,4 @@ CREATE TABLE doe_facilities_busroutesgarages (
 	Garage_Zip text,
 	XCoordinates double precision,
 	YCoordinates double precision
-  )
+  );
