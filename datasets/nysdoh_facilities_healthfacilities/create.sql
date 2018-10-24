@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS nysdoh_facilities_healthfacilities;
+DROP TABLE IF EXISTS nysdoh_facilities_healthfacilities CASCADE;
 CREATE TABLE nysdoh_facilities_healthfacilities (
 	Facility_ID text,
 	Facility_Name text,

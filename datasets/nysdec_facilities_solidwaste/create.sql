@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS nysdec_facilities_solidwaste;
+DROP TABLE IF EXISTS nysdec_facilities_solidwaste CASCADE;
 CREATE TABLE nysdec_facilities_solidwaste (
   Facility_Name text,
   Location_Address text,

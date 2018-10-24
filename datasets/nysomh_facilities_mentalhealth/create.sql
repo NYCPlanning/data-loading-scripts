@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS nysomh_facilities_mentalhealth;
+DROP TABLE IF EXISTS nysomh_facilities_mentalhealth CASCADE;
 CREATE TABLE nysomh_facilities_mentalhealth (
 	Row_Created_Date_Time text,
 	Sponsor_Name text,

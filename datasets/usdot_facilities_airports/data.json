@@ -1,5 +1,5 @@
 {
-  "url": "https://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/AdditionalAttachmentFiles/airports.zip",
+  "url": "http://osav-usdot.opendata.arcgis.com/datasets/a36a509eab4e43b4864fb594a35b90d6_0.zip",
   "saveFile": "usdot_facilities_airports.zip",
   "load": "shp2pgsql",
   "loadFiles": [
