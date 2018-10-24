@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"DEC_Lands.shp",
+      "file":"DEC_lands.shp",
       "table": "nysdec_facilities_lands"
     }
   ],
