@@ -3,7 +3,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"Bridge_Houses/Bridge_Houses.shp",
+      "file":"dot_facilities_bridgehouses.shp",
       "table": "dot_facilities_bridgehouses"
     }
   ],
