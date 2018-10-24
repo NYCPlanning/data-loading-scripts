@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/DOT_Plaza_Inventory_20170224.zip",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/dot_facilities_pedplazas.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
