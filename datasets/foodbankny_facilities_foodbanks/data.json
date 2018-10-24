@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/foodbankfornyc/foodbankny_facilities_foodbanks.csv",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/foodbankny/foodbankny_facilities_foodbanks.csv",
   "saveFile": "foodbankny_facilities_foodbanks.csv",
   "load": "csv",
   "loadFiles": [
