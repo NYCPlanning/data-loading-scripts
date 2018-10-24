@@ -1,5 +1,5 @@
 {
-  "url": "https://www.rita.dot.gov/bts/sites/rita.dot.gov.bts/files/AdditionalAttachmentFiles/ports.zip",
+  "url": "http://osav-usdot.opendata.arcgis.com/datasets/490e1e06b54b4a5bb1e58523a5d546a7_0.zip",
   "saveFile": "usdot_facilities_ports.zip",
   "load": "shp2pgsql",
   "loadFiles": [
