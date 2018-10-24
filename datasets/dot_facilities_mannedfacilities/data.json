@@ -1,9 +1,9 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/dot_facilities_MannedFacilities.zip",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/Manned_Facilities_DCP.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"Manned_Facilities/Manned_Facilities.shp",
+      "file":"Manned_Facilities_DCP.shp",
       "table": "dot_facilities_mannedfacilities"
     }
   ],
