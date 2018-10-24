@@ -1,5 +1,5 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS dohmh_facilities_daycare;
+DROP TABLE IF EXISTS dohmh_facilities_daycare CASCADE;
 CREATE TABLE dohmh_facilities_daycare (
 	Center_Name text,
 	Legal_Name text,
