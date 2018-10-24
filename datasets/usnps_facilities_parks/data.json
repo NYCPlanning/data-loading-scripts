@@ -1,10 +1,10 @@
 {
-  "url": "https://irma.nps.gov/DataStore/DownloadFile/580617",
+  "url": "https://opendata.arcgis.com/datasets/b1598d3df2c047ef88251016af5b0f1e_0.zip?outSR=%7B%22wkid%22%3A102100%2C%22latestWkid%22%3A3857%7D",
   "saveFile": "usnps_facilities_parks.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nps_boundary.shp",
+      "file":"NPS__Park_Unit_Boundaries.shp",
       "table": "usnps_facilities_parks"
     }
   ],
