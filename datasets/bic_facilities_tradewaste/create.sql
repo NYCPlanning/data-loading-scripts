@@ -24,5 +24,5 @@ CREATE TABLE bic_facilities_tradewaste (
   BIN text,
   BBL text,
   NTA text,
-  Borough text,
+  Borough text
 );
