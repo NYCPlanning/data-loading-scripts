@@ -4,7 +4,6 @@ CREATE TABLE nysed_nonpublicenrollment (
 	County text,
 	BEDS_Code text,
 	School_Name text,
-	School_Type_Desc text,
 	Affiliation text,
 	PREK text,
 	HALFK text,
