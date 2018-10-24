@@ -8,5 +8,6 @@ CREATE TABLE foodbankny_facilities_foodbanks (
 	ZIP_Code text,
 	FBC_Agency_Category_Code text,
 	Latitude_Y double precision,
-	Longitude_X double precision
-  )
+	Longitude_X double precision,
+	hash text
+  );
