@@ -42,6 +42,7 @@ CREATE TABLE doe_facilities_lcgms (
 	HighSchoolNetworkName text,
 	HighSchoolNetworkSuperintendent text,
 	Borough text,
+	BIN text,
 	Latitude text,
 	Longitude text
  )
