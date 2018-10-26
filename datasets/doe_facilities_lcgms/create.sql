@@ -40,5 +40,8 @@ CREATE TABLE doe_facilities_lcgms (
 	BFSCDirectorPhone text,
 	HighSchoolNetworkLocationCode text,
 	HighSchoolNetworkName text,
-	HighSchoolNetworkSuperintendent text
+	HighSchoolNetworkSuperintendent text,
+	Borough text,
+	Latitude text,
+	Longitude text
  )
