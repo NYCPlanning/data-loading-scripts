@@ -1,6 +1,5 @@
 {
-  "url": "https://planninglabs.carto.com/api/v2/sql?skipfields=cartodb_id&q=SELECT%20*%20FROM%20facdb_v201803&format=geojson&filename=facilities_complete_2018-11-01",
-  
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/facilities_complete_2018-11-01.zip",  
   "load": "shp2pgsql",
   "loadFiles": [
     {
