@@ -3,7 +3,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"facilities_complete_2018-11-01/facilities_complete_2018-11-01.shp",
+      "file":"facilities_complete_2018-11-01.shp",
       "table": "dcp_facilities"
     }
   ],
