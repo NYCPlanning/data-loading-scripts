@@ -3,27 +3,27 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file": "nycgiszoningfeatures_shp/nyzd.shp",
+      "file": "nyzd.shp",
       "table": "dcp_zoningdistricts"
     },
     {
-      "file": "nycgiszoningfeatures_shp/nyco.shp",
+      "file": "nyco.shp",
       "table": "dcp_commercialoverlay"
     },
     {
-      "file": "nycgiszoningfeatures_shp/nysp.shp",
+      "file": "nysp.shp",
       "table": "dcp_specialpurpose"
     },
     {
-      "file": "nycgiszoningfeatures_shp/nylh.shp",
+      "file": "nylh.shp",
       "table": "dcp_limitedheight"
     },
     {
-      "file": "nycgiszoningfeatures_shp/nysp_sd.shp",
+      "file": "nysp_sd.shp",
       "table": "dcp_specialpurposesubdistricts"
     },
     {
-      "file": "nycgiszoningfeatures_shp/nyzma.shp",
+      "file": "nyzma.shp",
       "table": "dcp_zoningmapamendments"
     }
   ],
