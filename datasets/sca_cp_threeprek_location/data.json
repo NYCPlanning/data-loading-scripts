@@ -1,0 +1,15 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/yv4m-nu6d/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "sca_cp_threeprek_location.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"sca_cp_threeprek_location.csv",
+      "table": "sca_cp_threeprek_location"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}

@@ -1,0 +1,1 @@
+\COPY sca_cp_threeprek_location FROM './temp/sca_cp_threeprek_location/sca_cp_threeprek_location.csv' CSV HEADER;
