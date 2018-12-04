@@ -1,0 +1,1 @@
+\COPY dcp_pluto_18v11_final FROM '/prod/data-loading-scripts/temp/dcp_pluto_18v11_final/dcp_pluto_18v11_final.csv' CSV HEADER;
