@@ -1,9 +1,9 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nycc_18c.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyccwi_18d.zip",
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"nycc_18c/nyccwi.shp",
+      "file":"nyccwi_18d/nyccwi.shp",
       "table": "dcp_councildistricts"
     }
   ], 
