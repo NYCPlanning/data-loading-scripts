@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dot/Bridges.geojson",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencysourcedata/dot/Bridges.geojson",
   "load": "org2ogr",
   "loadFiles": [
     {
