@@ -1,7 +1,7 @@
 -- create table to load csv from the nyc open data portal
 DROP TABLE IF EXISTS pluto_input_geocodes;
 CREATE TABLE pluto_input_geocodes (
-	boro text,
+	borough text,
 	block text,
 	lot text,
 	billingbbl text,
