@@ -1,10 +1,10 @@
 {
-  "url": "https://msc.fema.gov/portal/downloadProduct?productID=360497_PRELIMDB",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/fema/PFIRM2015.zip",
   "saveFile": "fema_pfirms2015_100yr.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"fema_pfirms2015_100yr/s_fld_haz_ar.shp",
+      "file":"fema_pfirms2015_100yr/PFIRM2015.shp",
       "table": "fema_pfirms2015_100yr"
     }
   ],
