@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"FIRM_s_fld_haz_ar.shp",
+      "file":"FIRM2007_s_fld_haz_az.shp",
       "table": "fema_firms2007_100yr"
     }
   ],
