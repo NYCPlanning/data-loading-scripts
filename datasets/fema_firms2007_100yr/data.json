@@ -1,0 +1,15 @@
+{
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/fema/FIRM2007.zip",
+  "saveFile": "fema_firms2007_100yr.zip",
+  "load": "shp2pgsql",
+  "loadFiles": [
+    {
+      "file":"FIRM_s_fld_haz_ar.shp",
+      "table": "fema_firms2007_100yr"
+    }
+  ],
+  "shp2pgsql": [
+    "-d",
+    "-s 2263:4326"
+  ]
+}
