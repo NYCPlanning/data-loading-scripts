@@ -90,5 +90,6 @@ CREATE TABLE pluto_rpad (
 	HOUSENUM_HI text,
 	STREET_NAME text,
 	STCODE11 text,
-	GEOSUPPORT_RC text
+	GEOSUPPORT_RC text,
+	GROSS_SQFT text
 );
