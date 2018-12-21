@@ -18,5 +18,9 @@ CREATE TABLE pluto_input_geocodes (
 	sanitationDistrict text,
 	sanitationCollectionScheduling text,
 	boePreferredStreetName text,
-	numberOfExistingStructures text
+	numberOfExistingStructures text,
+	taxMapNumberSectionAndVolume text,
+	sanbornBoroughCode text,
+	sanbornPageNumber text,
+	sanbornVolumeNumber text
  );
