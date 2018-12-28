@@ -1,15 +1,13 @@
 {
-  "url": "https://data.cityofnewyork.us/api/geospatial/hzb8-928j?method=export&format=Shapefile",
-  "saveFile": "dsny_sections.zip",
-  "load": "shp2pgsql",
+  "url": "https://data.cityofnewyork.us/api/geospatial/hzb8-928j?method=export&format=Original",
+  "load": "org2ogr",
   "loadFiles": [
     {
-      "file":"geo_export_4038efe0-3b15-4084-9f3f-45399cefef47.shp",
+      "file":"dsny_sections.geojson",
       "table": "dsny_sections"
     }
   ],
-  "shp2pgsql": [ 
-    "-d",
-    "-s 2263:4326"
-  ] 
+  "saveFile":"dsny_sections.geojson",
+  "ogr2ogr": [ 
+        ] 
 }
