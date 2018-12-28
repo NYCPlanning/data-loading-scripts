@@ -1,10 +1,10 @@
 {
-  "url": "https://data.cityofnewyork.us/api/geospatial/r8nu-ymqj?method=export&format=Shapefile",
-  "saveFile": "dcp_school_districts.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nysd_18d.zip",
+  "saveFile": "nysd_18d.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"geo_export_c36f47da-a57e-4040-a127-8fa05960e51e.shp",
+      "file":"nysd_18d/nysd.shp",
       "table": "dcp_school_districts"
     }
   ],
