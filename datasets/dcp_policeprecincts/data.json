@@ -1,0 +1,15 @@
+{
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nypp_18d.zip",
+  "saveFile": "nypp_18d.zip",
+  "load": "shp2pgsql",
+  "loadFiles": [
+    {
+      "file":"nypp_18d/nypp.shp",
+      "table": "dcp_policeprecincts"
+    }
+  ],
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+}

@@ -1,0 +1,15 @@
+{
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyha_18d.zip",
+  "saveFile": "nyha_18d.zip",
+  "load": "shp2pgsql",
+  "loadFiles": [
+    {
+      "file":"nyha_18d/nyha.shp",
+      "table": "dcp_healthareas"
+    }
+  ],
+  "shp2pgsql": [ 
+    "-d",
+    "-s 2263:4326"
+  ] 
+}
