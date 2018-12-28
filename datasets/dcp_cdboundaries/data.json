@@ -1,9 +1,9 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nycd_18c.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nycdwi_18d.zip",
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"nycd_18c/nycd.shp",
+      "file":"nycdwi_18d/nycdwi.shp",
       "table": "dcp_cdboundaries"
     }
   ], 
