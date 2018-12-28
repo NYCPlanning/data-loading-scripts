@@ -1,9 +1,10 @@
 {
   "url": "https://data.cityofnewyork.us/api/geospatial/hzb8-928j?method=export&format=Shapefile",
+  "saveFile": "dsny_sections.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"geo_export_4038efe0-3b15-4084-9f3f-45399cefef47.shp",
+      "file":"dsny_sections/geo_export_4038efe0-3b15-4084-9f3f-45399cefef47.shp",
       "table": "dsny_sections"
     }
   ],
