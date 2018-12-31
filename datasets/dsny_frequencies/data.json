@@ -1,0 +1,13 @@
+{
+  "url": "https://data.cityofnewyork.us/api/geospatial/gyhq-r8du?method=export&format=Original",
+  "load": "org2ogr",
+  "loadFiles": [
+    {
+      "file":"dsny_frequencies.geojson",
+      "table": "dsny_frequencies"
+    }
+  ],
+  "saveFile":"dsny_frequencies.geojson",
+  "ogr2ogr": [ 
+        ] 
+}
