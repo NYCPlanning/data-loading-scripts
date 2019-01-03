@@ -4,6 +4,7 @@ CREATE TABLE pluto_input_geocodes (
 	borough text,
 	block text,
 	lot text,
+	easement text,
 	billingbbl text,
 	communityDistrict text,
 	censusTract2010 text,
