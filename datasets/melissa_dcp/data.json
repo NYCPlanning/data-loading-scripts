@@ -29,8 +29,7 @@
     {
       "file": "F1A_Err.csv",
       "table": "melissa_f1aerr"
-    },
-
+    }
    ],
   "csv": [ 
     "create",
