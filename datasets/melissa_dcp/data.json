@@ -5,31 +5,31 @@
      {
       "file": "3251328-JR.txt",
       "table": "melissa_raw"
-    },
-    {
-      "file": "FAP_Out_Combined.csv",
-      "table": "melissa_fapout"
-    },
-    {
-      "file": "FAP_Err.csv",
-      "table": "melissa_faperr"
-    },
-    {
-      "file": "F1E_Out_Combined.csv",
-      "table": "melissa_f1eout"
-    },
-    {
-      "file": "F1E_Err.csv",
-      "table": "melissa_f1eerr"
-    },
-    {
-      "file": "F1A_Out_Combined.csv",
-      "table": "melissa_f1aout"
-    },
-    {
-      "file": "F1A_Err.csv",
-      "table": "melissa_f1aerr"
     }
+    // {
+    //   "file": "FAP_Out_Combined.csv",
+    //   "table": "melissa_fapout"
+    // },
+    // {
+    //   "file": "FAP_Err.csv",
+    //   "table": "melissa_faperr"
+    // },
+    // {
+    //   "file": "F1E_Out_Combined.csv",
+    //   "table": "melissa_f1eout"
+    // },
+    // {
+    //   "file": "F1E_Err.csv",
+    //   "table": "melissa_f1eerr"
+    // },
+    // {
+    //   "file": "F1A_Out_Combined.csv",
+    //   "table": "melissa_f1aout"
+    // },
+    // {
+    //   "file": "F1A_Err.csv",
+    //   "table": "melissa_f1aerr"
+    // }
    ],
   "csv": [ 
     "create",
