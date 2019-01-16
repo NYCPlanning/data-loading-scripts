@@ -1,14 +1,14 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/meslissa/3251328JR.csv",
-  "saveFile": "melissa_raw.csv",
-  "load": "csv",
-  "loadFiles": [
-    {
-      "file":"melissa_raw.csv",
-      "table": "melissa_raw"
-    }
-  ],
-  "csv": [ 
-    "create",
-    "copy"
-  ] 
+ "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/melissa/melissa.zip",
+ "load": "csv",
+ "loadFiles": [
+  {
+      "file": "FAP_Out_Combined.csv",
+      "table": "melissa_fapout"
+  } 
+ ], 
+ "shp2pgsql": [ 
+   "-d",
+   "-s 2263:4326"
+ ] 
+}
