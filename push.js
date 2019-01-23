@@ -32,10 +32,12 @@ module.exports = function(dataset) {
                 database: db.database,
                 user: db.user,
                 port: db.port,
+                host: host, 
+                password: db.password,
                 table: loadFiles[i].table
               }
 
-              var shp2pgsql = Mustache.render('shp2pgsql {{options}} {{{filePath}}} {{table}} | psql -d {{database}} -p {{port}} -U {{user}}', shp2pgsqlOptions);
+              var shp2pgsql = Mustache.render('shp2pgsql {{options}} {{{filePath}}} {{table}} | psql -d {{database}} -p {{port}} -h {{host}} -U {{user}}', shp2pgsqlOptions);
                 
               console.log('Executing: ' + shp2pgsql);
               exec(shp2pgsql, {}, function(err, stdout, stderr) {
@@ -66,11 +68,12 @@ module.exports = function(dataset) {
                 filePath: filePath,
                 database: db.database,
                 port: db.port,
+                host:db.host,
                 user: db.user,
                 table: loadFiles[i].table
               }
                                
-              var ogr2ogr = Mustache.render("ogr2ogr -f 'PostgreSQL' PG:'dbname={{database}} user={{user}} port={{port}}' {{{filePath}}} -nln {{table}} -overwrite {{options}}", ogr2ogrOptions);
+              var ogr2ogr = Mustache.render("ogr2ogr -f 'PostgreSQL' PG:'dbname={{database}} host={{host}} user={{user}} port={{port}}' {{{filePath}}} -nln {{table}} -overwrite {{options}}", ogr2ogrOptions);
                 
               console.log('Executing: ' + ogr2ogr);
               exec(ogr2ogr, {}, function(err, stdout, stderr) {
@@ -99,10 +102,11 @@ module.exports = function(dataset) {
               config.csv.forEach(function(file) {
                 console.log(file);
                 if(file == 'create') {
-                  var command = Mustache.render('psql -d {{database}} -p {{port}} -U {{user}} -f {{{path}}}{{file}}.sql', {
+                  var command = Mustache.render('psql -d {{database}} -p {{port}} -U {{user}} -h {{host}} -f {{{path}}}{{file}}.sql', {
                     user: db.user,
                     database: db.database,
                     port: db.port,
+                    host: db.host,
                     path: 'datasets/' + dataset + '/', 
                     file: file
                   });
@@ -118,10 +122,11 @@ module.exports = function(dataset) {
                   var loadFile = loadFiles[i].file;
 
 
-                  var command = Mustache.render('psql -d {{database}} -p {{port}} -U {{user}} -c "\\COPY {{dataset}} FROM \'{{{filePath}}}\' CSV HEADER;"', {
+                  var command = Mustache.render('psql -d {{database}} -p {{port}} -h {{host}} -U {{user}} -c "\\COPY {{dataset}} FROM \'{{{filePath}}}\' CSV HEADER;"', {
                     user: db.user,
                     database: db.database,
                     port: db.port,
+                    host: db.host,
                     path: 'datasets/' + dataset + '/',
                     filePath: filePath,
                     dataset: dataset

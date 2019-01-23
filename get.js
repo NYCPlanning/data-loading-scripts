@@ -37,7 +37,7 @@ module.exports = function(dataset) {
             filename: config.saveFile
           }
           download(config.url, options, function(err){
-          // if (err) throw err
+          if (err) throw err
 
           console.log('Saved file to ' + config.writePath + '/' + config.saveFile)
           var ext = getExtension(config.saveFile);
