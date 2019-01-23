@@ -35,7 +35,7 @@ module.exports = function(dataset) {
                 table: loadFiles[i].table
               }
 
-              var shp2pgsql = Mustache.render('shp2pgsql {{options}} {{{filePath}}} {{table}} | psql -d {{database}} -h {{port}} -U {{user}}', shp2pgsqlOptions);
+              var shp2pgsql = Mustache.render('shp2pgsql {{options}} {{{filePath}}} {{table}} | psql -d {{database}} -p {{port}} -U {{user}}', shp2pgsqlOptions);
                 
               console.log('Executing: ' + shp2pgsql);
               exec(shp2pgsql, {}, function(err, stdout, stderr) {
@@ -99,7 +99,7 @@ module.exports = function(dataset) {
               config.csv.forEach(function(file) {
                 console.log(file);
                 if(file == 'create') {
-                  var command = Mustache.render('psql -d {{database}} -h {{port}} -U {{user}} -f {{{path}}}{{file}}.sql', {
+                  var command = Mustache.render('psql -d {{database}} -p {{port}} -U {{user}} -f {{{path}}}{{file}}.sql', {
                     user: db.user,
                     database: db.database,
                     port: db.port,
@@ -118,7 +118,7 @@ module.exports = function(dataset) {
                   var loadFile = loadFiles[i].file;
 
 
-                  var command = Mustache.render('psql -d {{database}} -h {{port}} -U {{user}} -c "\\COPY {{dataset}} FROM \'{{{filePath}}}\' CSV HEADER;"', {
+                  var command = Mustache.render('psql -d {{database}} -p {{port}} -U {{user}} -c "\\COPY {{dataset}} FROM \'{{{filePath}}}\' CSV HEADER;"', {
                     user: db.user,
                     database: db.database,
                     port: db.port,
