@@ -12,7 +12,6 @@ CREATE TABLE housing_input_dcpattributes (
 	units_prop_hotel text,
 	u_net_comp text,
 	u_net_inc text,
-	c_u_latest text,
 	unit_change_preapr2010 text,
 	unit_change_postapr2010 text,
 	unit_change_2011 text,
@@ -24,9 +23,8 @@ CREATE TABLE housing_input_dcpattributes (
 	unit_change_2017 text,
 	unit_change_2018 text,
 	x_mixeduse text,
-	x_inactive text,
 	bbl text,
 	bin text,
 	latitude text,
 	longitude text,
-	geom geometry);
+	reason text);
