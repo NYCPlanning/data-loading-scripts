@@ -1,0 +1,1 @@
+\COPY housing_input_removals FROM './temp/housing_input_removals/housing_input_removals.csv' CSV HEADER;
