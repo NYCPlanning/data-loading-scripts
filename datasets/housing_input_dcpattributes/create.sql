@@ -27,4 +27,5 @@ CREATE TABLE housing_input_dcpattributes (
 	bin text,
 	latitude text,
 	longitude text,
-	reason text);
+	reason text,
+	blank text);
