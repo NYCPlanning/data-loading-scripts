@@ -32,7 +32,7 @@ module.exports = function(dataset) {
                 database: db.database,
                 user: db.user,
                 port: db.port,
-                host: host, 
+                host: db.host, 
                 password: db.password,
                 table: loadFiles[i].table
               }
