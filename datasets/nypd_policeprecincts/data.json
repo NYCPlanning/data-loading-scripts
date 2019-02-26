@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nypp_17b/nypp.shp",
+      "file":"nypp_18d/nypp.shp",
       "table": "nypd_policeprecincts"
     }
   ],

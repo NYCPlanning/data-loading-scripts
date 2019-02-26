@@ -2,13 +2,39 @@
  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/melissa/melissa.zip",
  "load": "csv",
  "loadFiles": [
-  {
+ {
+      "file": "3251328_JR.csv",
+      "table": "melissa_raw"
+    },
+    {
       "file": "FAP_Out_Combined.csv",
       "table": "melissa_fapout"
-  } 
+    },
+    {
+      "file": "FAP_Err.csv",
+      "table": "melissa_faperr"
+    },
+    {
+      "file": "F1E_Out_Combined.csv",
+      "table": "melissa_f1eout"
+    },
+    {
+      "file": "F1E_Err.csv",
+      "table": "melissa_f1eerr"
+    },
+    {
+      "file": "F1A_Out_Combined.csv",
+      "table": "melissa_f1aout"
+    },
+    {
+      "file": "F1A_Err.csv",
+      "table": "melissa_f1aerr"
+    }
  ], 
  "shp2pgsql": [ 
    "-d",
    "-s 2263:4326"
  ] 
 }
+
+cp 3251328-JR.txt 3251328_JR.csv
