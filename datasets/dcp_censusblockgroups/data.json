@@ -3,7 +3,7 @@
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"CensusBlockGroups2010/CensusBlockGroups2010.shp",
+      "file":"CensusBlockGroups2010.shp",
       "table": "dcp_censusblockgroups"
     }
   ], 
