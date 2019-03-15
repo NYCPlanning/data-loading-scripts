@@ -1,0 +1,18 @@
+{
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/sca/SCA_capacity_project_site_location_20180320.csv",
+  "saveFile": "sca_cp_cap_location_prev.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"sca_cp_cap_location_prev.csv",
+      "table": "sca_cp_cap_location_prev"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
+
+
+

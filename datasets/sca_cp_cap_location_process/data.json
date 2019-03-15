@@ -1,0 +1,18 @@
+{
+  "url": "https://data.cityofnewyork.us/api/views/dtmw-avzj/rows.csv?accessType=DOWNLOAD",
+  "saveFile": "sca_cp_cap_location_process.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"sca_cp_cap_location_process.csv",
+      "table": "sca_cp_cap_location_process"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
+
+
+

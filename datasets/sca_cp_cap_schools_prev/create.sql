@@ -1,6 +1,6 @@
 -- create table to load csv from the nyc open data portal
-DROP TABLE IF EXISTS sca_cp_cap_schools;
-CREATE TABLE sca_cp_cap_schools (
+DROP TABLE IF EXISTS sca_cp_cap_schools_prev;
+CREATE TABLE sca_cp_cap_schools_prev (
 	ExistingSiteIdentified text, 
 	ProposedLeasedFacility text,
 	District text,

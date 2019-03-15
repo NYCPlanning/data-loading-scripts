@@ -1,0 +1,1 @@
+\COPY sca_cp_cap_location_process FROM './temp/sca_cp_cap_location_process/sca_cp_cap_location_process.csv' CSV HEADER;
