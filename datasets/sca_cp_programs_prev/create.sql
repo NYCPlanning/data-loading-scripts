@@ -8,7 +8,7 @@ CREATE TABLE sca_cp_programs_prev (
 	ProjectNum text,
 	Description text,
 	FY text,
-	Total double precision
+	Total text
 );
 
 
