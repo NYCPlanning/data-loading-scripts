@@ -13,8 +13,6 @@ CREATE TABLE sca_cp_cap_schools_prev (
 	ActualEstCompl text, 
 	TotalEstCost text, 
 	PreviousAppropriations text,
-	FundingReqd text,
-	NeededtoComplete text
-);
+	FundingReqd text);
 
 
