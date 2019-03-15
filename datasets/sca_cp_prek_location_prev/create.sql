@@ -4,7 +4,8 @@ CREATE TABLE sca_cp_prek_location_prev (
 	DISTRICT text,
 	SCHOOL text,
 	BOROUGH	text,
-	LOCATION text
+	LOCATION text,
+	extra text
 );
 
 
