@@ -6,13 +6,13 @@ CREATE TABLE sca_cp_cap_schools_prev (
 	District text,
 	ProjectNum text,
 	School text,
-	Boro text,
 	ForecastCapacity text,
 	DesignStart text, 
 	ConstrStart text, 
 	ActualEstCompl text, 
 	TotalEstCost text, 
 	PreviousAppropriations text,
-	FundingReqd text);
+	FundingReqd text,
+	neededtocomplete text);
 
 
