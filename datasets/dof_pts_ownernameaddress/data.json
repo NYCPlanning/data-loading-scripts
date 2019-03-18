@@ -1,0 +1,15 @@
+{
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dof/OwnerNameAddress_CD030919T0333.txt",
+  "saveFile": "dof_pts_ownernameaddress.csv",
+  "load": "csv",
+  "loadFiles": [
+    {
+      "file":"dof_pts_ownernameaddress.csv",
+      "table": "dof_pts_ownernameaddress"
+    }
+  ],
+  "csv": [ 
+    "create",
+    "copy"
+  ] 
+}
