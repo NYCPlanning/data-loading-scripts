@@ -1,28 +1,12 @@
 {
-  "url": "http://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/mappluto_17v1_1.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_mappluto_18v2_shp.zip",
   "table": "dcp_mappluto",
   "load": "shp2pgsql",
  "loadFiles": [
      {
-      "file": "Manhattan/MNMapPLUTO.shp",
+      "file": "nyc_mappluto_18v2_shp/MapPLUTO.shp",
       "table": "mnmappluto"
-    },
-    {
-      "file": "Bronx/BXMapPLUTO.shp",
-      "table": "bxmappluto"
-    },
-    {
-      "file": "Brooklyn/BKMapPLUTO.shp",
-      "table": "bkmappluto"
-    },
-    {
-      "file": "Queens/QNMapPLUTO.shp",
-      "table": "qnmappluto"
-    },
-    {
-      "file": "Staten_Island/SIMapPLUTO.shp",
-      "table": "simappluto"
- }
+    }
    ],
   "shp2pgsql": [ 
     "-d",
