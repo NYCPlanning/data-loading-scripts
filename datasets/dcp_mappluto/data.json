@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
  "loadFiles": [
      {
-      "file": "nyc_mappluto_18v2_shp/MapPLUTO.shp",
+      "file": "MapPLUTO.shp",
       "table": "mnmappluto"
     }
    ],
