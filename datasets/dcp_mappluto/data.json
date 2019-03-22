@@ -5,7 +5,7 @@
  "loadFiles": [
      {
       "file": "MapPLUTO.shp",
-      "table": "mnmappluto"
+      "table": "dcp_mappluto"
     }
    ],
   "shp2pgsql": [ 
