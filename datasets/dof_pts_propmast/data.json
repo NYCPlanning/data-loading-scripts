@@ -1,5 +1,5 @@
 {
-  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dof/PTS_Propmast.txt",
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dof/PTS_Propmast_2.txt",
   "saveFile": "dof_pts_propmast.csv",
   "load": "csv",
   "loadFiles": [
