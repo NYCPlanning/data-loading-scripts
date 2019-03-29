@@ -1,0 +1,15 @@
+{
+  "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/MapPLUTO_18v2_1_Clipped.zip",
+  "saveFile": "MapPLUTO_18v2_1_Clipped.zip",
+  "load": "shp2pgsql",
+  "loadFiles": [
+    {
+      "file":"MapPLUTO_18v2_1_Clipped.shp",
+      "table": "dcp_mappluto_18v21"
+    }
+  ],
+  "shp2pgsql": [
+    "-d",
+    "-s 2263:4326"
+  ]
+}
