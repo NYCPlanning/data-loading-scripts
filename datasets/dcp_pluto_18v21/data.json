@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"MapPLUTO_18v2_1_Clipped.shp",
+      "file":"MapPLUTO_18v2_1_Shoreline_Clipped.shp",
       "table": "dcp_mappluto_18v21"
     }
   ],
