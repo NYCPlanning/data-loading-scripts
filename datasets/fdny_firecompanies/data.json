@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nyfc_18d/nyfc.shp",
+      "file":"nyfc_19b/nyfc.shp",
       "table": "fdny_firecompanies"
     }
   ],
