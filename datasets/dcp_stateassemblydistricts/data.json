@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nyad_19b/nyad.shp",
+      "file":"nyad_19a/nyad.shp",
       "table": "dcp_stateassemblydistricts"
     }
   ],
