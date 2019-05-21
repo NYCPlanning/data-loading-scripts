@@ -3,7 +3,7 @@
  "load": "shp2pgsql",
  "loadFiles": [
   {
-    "file": "edc_capitalprojects20.shp",
+    "file": "edc_capitalprojects20/edc_capitalprojects20.shp",
     "table": "edc_capitalprojects20"
   } 
  ], 
