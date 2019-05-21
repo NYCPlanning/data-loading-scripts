@@ -3,7 +3,7 @@
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"nyccwi_18d/nyccwi.shp",
+      "file":"nyccwi_19b/nyccwi.shp",
       "table": "dcp_councildistricts"
     }
   ], 

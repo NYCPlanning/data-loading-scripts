@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nysd_18d/nysd.shp",
+      "file":"nysd_19b/nysd.shp",
       "table": "dcp_school_districts"
     }
   ],
