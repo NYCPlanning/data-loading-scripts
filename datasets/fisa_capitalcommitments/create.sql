@@ -20,5 +20,6 @@ CREATE TABLE fisa_capitalcommitments (
 	fcst_pv_amt double precision,
 	planned_commit_date text,
 	typ_category text,
-	typ_category_name text
+	typ_category_name text,
+	extra text
 );
