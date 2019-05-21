@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nycg_19b/nycg.shp",
+      "file":"nycg_19a/nycg.shp",
       "table": "dcp_congressionaldistricts"
     }
   ],
