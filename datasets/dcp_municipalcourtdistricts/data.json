@@ -4,7 +4,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nymc_19b/nymc.shp",
+      "file":"nymc_19a/nymc.shp",
       "table": "dcp_municipalcourtdistricts"
     }
   ],
