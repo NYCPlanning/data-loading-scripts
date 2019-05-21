@@ -1,5 +1,5 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_mappluto_18v2_shp.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_mappluto_18v2_1_shp.zip",
   "table": "dcp_mappluto",
   "load": "shp2pgsql",
  "loadFiles": [

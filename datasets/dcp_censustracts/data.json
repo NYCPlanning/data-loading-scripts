@@ -1,5 +1,5 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyct2010wi_18d.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyct2010wi_19b.zip",
   "load": "shp2pgsql",
   "loadFiles":[
     {
