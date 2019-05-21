@@ -1,10 +1,10 @@
 {
- "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/edc/edc_capitalprojects19.zip",
+ "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/edc/edc_capitalprojects20.zip",
  "load": "shp2pgsql",
  "loadFiles": [
   {
     "file": "edc_capitalprojects.shp",
-    "table": "edc_capitalprojects19"
+    "table": "edc_capitalprojects20"
   } 
  ], 
  "shp2pgsql": [ 
