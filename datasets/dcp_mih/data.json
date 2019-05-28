@@ -3,7 +3,7 @@
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file": "mih.shp",
+      "file": "dcp_mih/GIS/BytesProduction/MIH/2019/20190517/shp/nycmih_20190529.shp",
       "table": "dcp_mih"
     }
   ],
