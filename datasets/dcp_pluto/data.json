@@ -1,10 +1,10 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_18v2_csv.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyc_pluto_18v2_1_csv.zip",
   "load": "csv",
   "loadFiles": [
      {
-      "file": "pluto_18v2.csv",
-      "table": "mnpluto"
+      "file": "pluto_18v2_1.csv",
+      "table": "dcp_pluto"
     }
    ],
   "csv": [ 
