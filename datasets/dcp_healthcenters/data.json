@@ -1,10 +1,10 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyhc_18d.zip",
-  "saveFile": "nyhc_18d.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyhc_19b.zip",
+  "saveFile": "nyhc_19b.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nyhc_18d/nyhc.shp",
+      "file":"nyhc_19b/nyhc.shp",
       "table": "dcp_healthcenters"
     }
   ],

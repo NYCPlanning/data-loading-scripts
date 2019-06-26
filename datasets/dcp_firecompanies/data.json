@@ -1,10 +1,10 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyfc_18d.zip",
-  "saveFile": "nyfc_18d.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyfc_19b.zip",
+  "saveFile": "nyfc_19b.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nyfc_18d/nyfc.shp",
+      "file":"nyfc_19b/nyfc.shp",
       "table": "dcp_firecompanies"
     }
   ],

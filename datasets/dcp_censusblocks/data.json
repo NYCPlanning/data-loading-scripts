@@ -1,9 +1,9 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nycb2010wi_18d.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nycb2010wi_19b.zip",
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"nycb2010wi_18d/nycb2010wi.shp",
+      "file":"nycb2010wi_19b/nycb2010wi.shp",
       "table": "dcp_censusblocks"
     }
   ], 

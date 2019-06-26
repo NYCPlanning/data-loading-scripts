@@ -1,6 +1,6 @@
 {
   "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nysd_19b.zip",
-  "saveFile": "nysd_18d.zip",
+  "saveFile": "nysd_19b.zip",
   "load": "shp2pgsql",
   "loadFiles": [
     {
