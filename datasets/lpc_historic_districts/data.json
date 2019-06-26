@@ -1,5 +1,5 @@
 {
-  "url": "https://data.cityofnewyork.us/api/views/carn-tkei/rows.csv?accessType=DOWNLOAD",
+  "url": "https://data.cityofnewyork.us/api/views/x3ar-yjn2/rows.csv?accessType=DOWNLOAD",
   "saveFile": "lpc_historic_districts.csv",
   "load": "csv",
   "loadFiles": [
