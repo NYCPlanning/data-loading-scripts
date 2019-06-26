@@ -1,9 +1,9 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyedes_20180321shp.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nyedes_20190531shp.zip",
   "load": "shp2pgsql",
   "loadFiles":[
     {
-      "file":"nyedes_20180321.shp",
+      "file":"nyedes_20190531.shp",
       "table": "dcp_edesignation"
     }
   ], 
