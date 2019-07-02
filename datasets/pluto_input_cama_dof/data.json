@@ -1,10 +1,10 @@
 {
   "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dof/pluto_input_cama_dof.txt",
-  "saveFile": "pluto_input_cama_dof.csv",
+  "saveFile": "pluto_input_cama_dof.txt",
   "load": "csv",
   "loadFiles": [
     {
-      "file":"pluto_input_cama_dof.csv",
+      "file":"pluto_input_cama_dof.txt",
       "table": "pluto_input_cama_dof"
     }
   ],
