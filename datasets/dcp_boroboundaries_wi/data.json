@@ -1,10 +1,10 @@
 {
-  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybbwi_18c.zip",
+  "url": "https://www1.nyc.gov/assets/planning/download/zip/data-maps/open-data/nybbwi_19b.zip",
   
   "load": "shp2pgsql",
   "loadFiles": [
     {
-      "file":"nybbwi_18c/nybbwi.shp",
+      "file":"nybbwi_19b/nybbwi.shp",
       "table": "dcp_boroboundaries_wi"
     }
   ],
