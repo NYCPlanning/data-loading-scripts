@@ -1,10 +1,7 @@
 -- create table to load csv from the nyc open data portal
 DROP TABLE IF EXISTS pluto_input_cama_dof;
 CREATE TABLE pluto_input_cama_dof (
-	BORO text,
-	BLOCK text,
-	LOT text,
-	EASEMENT text,
+	BBL text,
 	PARCELCARD text,
 	BLDGNUM text,
 	BLDGCLASS text,
