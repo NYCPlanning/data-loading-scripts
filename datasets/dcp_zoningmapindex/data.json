@@ -4,7 +4,7 @@
  "load": "shp2pgsql",
  "loadFiles": [
   {
-    "file": "Quartersection_ZoningMapIndex.shp",
+    "file": "DCP_Quartersection_Index.shp",
     "table": "dcp_zoningmapindex"
   } 
  ], 
