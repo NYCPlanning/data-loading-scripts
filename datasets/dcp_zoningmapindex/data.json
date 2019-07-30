@@ -1,5 +1,5 @@
 {
- "url": "https://data.cityofnewyork.us/api/geospatial/58k2-kgtb?method=export&format=Original",
+ "url": "ftp://{{username}}:{{password}}@23.246.114.130/agencySourceData/dcp/DCP_Quartersection_Index.zip",
   "saveFile": "dcp_zoningmapindex.zip",
  "load": "shp2pgsql",
  "loadFiles": [
