@@ -28,6 +28,7 @@ CREATE TABLE housing_input_dcpattributes (
 	latitude text,
 	longitude text,
 	x_inactive text,
+	HNY_id text,
 	reason text,
 	extra text
 	);
