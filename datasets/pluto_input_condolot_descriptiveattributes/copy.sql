@@ -1,0 +1,1 @@
+\COPY pluto_input_condolot_descriptiveattributes FROM './temp/pluto_input_condolot_descriptiveattributes/pluto_input_condolot_descriptiveattributes.csv' CSV HEADER;
